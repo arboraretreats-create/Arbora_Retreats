@@ -513,7 +513,7 @@ $mainHtmlContent = @"
           <div class="p-6 flex-1 flex flex-col justify-between">
             <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-1">The Estate Veranda</h3>
             <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">A sun-dappled balcony overlooking coffee plantations for morning conversations.</p>
-            <button onclick="openDestinationModal('The Estate Veranda', 'SETTING', '$verandaB64', 'A sun-dappled balcony overlooking coffee plantations.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
+            <button onclick="openDestinationModal('The Estate Veranda', 'SETTING', '/images/properties/varenda.jpeg', 'A sun-dappled balcony overlooking coffee plantations.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
           </div>
         </div>
 
@@ -525,7 +525,7 @@ $mainHtmlContent = @"
           <div class="p-6 flex-1 flex flex-col justify-between">
             <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-1">Lakeside Reflection Zone</h3>
             <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">Tranquil waterside spot for acoustic music circles and reflection.</p>
-            <button onclick="openDestinationModal('Lakeside Reflection Zone', 'SETTING', '$lakeViewB64', 'A tranquil lakeside spot surrounded by foliage.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
+            <button onclick="openDestinationModal('Lakeside Reflection Zone', 'SETTING', '/images/properties/lake-view.jpeg', 'A tranquil lakeside spot surrounded by foliage.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
           </div>
         </div>
 
@@ -537,7 +537,7 @@ $mainHtmlContent = @"
           <div class="p-6 flex-1 flex flex-col justify-between">
             <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-1">Long-Table Courtyard</h3>
             <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">Open courtyard where Arborans share authentic regional meals together.</p>
-            <button onclick="openDestinationModal('Long-Table Courtyard', 'SETTING', '$diningB64', 'Warm open courtyard for long-table meals.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
+            <button onclick="openDestinationModal('Long-Table Courtyard', 'SETTING', '/images/properties/dining.jpeg', 'Warm open courtyard for long-table meals.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
           </div>
         </div>
 
@@ -549,7 +549,7 @@ $mainHtmlContent = @"
           <div class="p-6 flex-1 flex flex-col justify-between">
             <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-1">Starlit Campfire Circle</h3>
             <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">Fireside grounds for acoustic singalongs and late-night storytelling.</p>
-            <button onclick="openDestinationModal('Starlit Campfire Circle', 'SETTING', '$campfireB64', 'Fireside grounds under starlit skies.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
+            <button onclick="openDestinationModal('Starlit Campfire Circle', 'SETTING', '/images/properties/campfire.jpeg', 'Fireside grounds under starlit skies.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
           </div>
         </div>
 
@@ -561,7 +561,7 @@ $mainHtmlContent = @"
           <div class="p-6 flex-1 flex flex-col justify-between">
             <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-1">Rest Spaces</h3>
             <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">Comfortable spaces designed for peaceful rest after full days outdoors.</p>
-            <button onclick="openDestinationModal('Rest Spaces', 'SETTING', '$privateRoomB64', 'Comfortable spaces designed for peaceful rest.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
+            <button onclick="openDestinationModal('Rest Spaces', 'SETTING', '/images/properties/private-room.jpeg', 'Comfortable spaces designed for peaceful rest.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
           </div>
         </div>
 
@@ -573,7 +573,7 @@ $mainHtmlContent = @"
           <div class="p-6 flex-1 flex flex-col justify-between">
             <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-1">Dorm Quarters</h3>
             <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">Dormitories for friends and solo travelers to connect.</p>
-            <button onclick="openDestinationModal('Dorm Quarters', 'SETTING', '$dormB64', 'Dormitories for friends and solo travelers.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
+            <button onclick="openDestinationModal('Dorm Quarters', 'SETTING', '/images/properties/dormitary-room.jpeg', 'Dormitories for friends and solo travelers.')" class="font-montserrat text-xs font-bold text-[#12241C] hover:text-[#C5A880] uppercase">See the setting &rarr;</button>
           </div>
         </div>
       </div>
@@ -588,7 +588,7 @@ $mainHtmlContent = @"
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">The Estate Veranda</h3>
               <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">Balcony overlooking coffee plantations.</p>
-              <button onclick="openDestinationModal('The Estate Veranda', 'SETTING', '$verandaB64', 'Balcony overlooking coffee plantations.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
+              <button onclick="openDestinationModal('The Estate Veranda', 'SETTING', '/images/properties/varenda.jpeg', 'Balcony overlooking coffee plantations.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
             </div>
           </div>
 
@@ -599,7 +599,7 @@ $mainHtmlContent = @"
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">Lakeside Reflection Zone</h3>
               <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">Tranquil waterside spot.</p>
-              <button onclick="openDestinationModal('Lakeside Reflection Zone', 'SETTING', '$lakeViewB64', 'Tranquil waterside spot.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
+              <button onclick="openDestinationModal('Lakeside Reflection Zone', 'SETTING', '/images/properties/lake-view.jpeg', 'Tranquil waterside spot.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
             </div>
           </div>
 
@@ -610,7 +610,7 @@ $mainHtmlContent = @"
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">Long-Table Courtyard</h3>
               <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">Open courtyard for long-table meals.</p>
-              <button onclick="openDestinationModal('Long-Table Courtyard', 'SETTING', '$diningB64', 'Open courtyard for long-table meals.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
+              <button onclick="openDestinationModal('Long-Table Courtyard', 'SETTING', '/images/properties/dining.jpeg', 'Open courtyard for long-table meals.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
             </div>
           </div>
 
@@ -621,7 +621,7 @@ $mainHtmlContent = @"
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">Starlit Campfire Circle</h3>
               <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">Fireside grounds for acoustic singalongs.</p>
-              <button onclick="openDestinationModal('Starlit Campfire Circle', 'SETTING', '$campfireB64', 'Fireside grounds under starlit skies.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
+              <button onclick="openDestinationModal('Starlit Campfire Circle', 'SETTING', '/images/properties/campfire.jpeg', 'Fireside grounds under starlit skies.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
             </div>
           </div>
 
@@ -632,7 +632,7 @@ $mainHtmlContent = @"
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">Rest Spaces</h3>
               <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">Comfortable spaces for peaceful rest.</p>
-              <button onclick="openDestinationModal('Rest Spaces', 'SETTING', '$privateRoomB64', 'Comfortable spaces for peaceful rest.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
+              <button onclick="openDestinationModal('Rest Spaces', 'SETTING', '/images/properties/private-room.jpeg', 'Comfortable spaces for peaceful rest.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
             </div>
           </div>
 
@@ -643,7 +643,7 @@ $mainHtmlContent = @"
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">Dorm Quarters</h3>
               <p class="font-sans text-xs text-[#2C3E33] leading-relaxed mb-4">Dormitories for friends &amp; solo travelers.</p>
-              <button onclick="openDestinationModal('Dorm Quarters', 'SETTING', '$dormB64', 'Dormitories for friends & solo travelers.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
+              <button onclick="openDestinationModal('Dorm Quarters', 'SETTING', '/images/properties/dormitary-room.jpeg', 'Dormitories for friends & solo travelers.')" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest">See the setting &rarr;</button>
             </div>
           </div>
         </div>
@@ -1222,7 +1222,12 @@ $mainHtmlContent = @"
 
     function openDestinationModal(title, tag, imgB64, desc) {
       document.getElementById('destModalTitle').innerText = title;
-      document.getElementById('destModalImg').src = 'data:image/jpeg;base64,' + imgB64;
+      var modalImg = document.getElementById('destModalImg');
+      if (imgB64.startsWith('/') || imgB64.startsWith('http')) {
+        modalImg.src = imgB64;
+      } else {
+        modalImg.src = 'data:image/jpeg;base64,' + imgB64;
+      }
       document.getElementById('destModalDesc').innerText = desc;
       document.getElementById('destinationModal').classList.remove('hidden');
     }
