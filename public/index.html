@@ -1050,24 +1050,35 @@
       document.getElementById('destinationModal').classList.remove('hidden');
     }
     function closeDestinationModal() { document.getElementById('destinationModal').classList.add('hidden'); }
-
     function toggleMobileMenu() {
       var menu = document.getElementById('mobileDropdown');
-      if (menu.classList.contains('hidden')) { menu.classList.remove('hidden'); }
-      else { menu.classList.add('hidden'); }
+      if (menu) {
+        if (menu.classList.contains('hidden')) { menu.classList.remove('hidden'); }
+        else { menu.classList.add('hidden'); }
+      }
     }
-    function openModal() { document.getElementById('bookingModal').classList.remove('hidden'); }
-    function closeModal() { document.getElementById('bookingModal').classList.add('hidden'); }
+    function openModal() {
+      var modal = document.getElementById('bookingModal');
+      if (modal) { modal.classList.remove('hidden'); }
+    }
+    function closeModal() {
+      var modal = document.getElementById('bookingModal');
+      if (modal) { modal.classList.add('hidden'); }
+    }
+            function openGmailCompose(name, phone) {
+      var nameStr = name || 'Arboran';
+      var phoneStr = phone || '';
+      var subject = encodeURIComponent("Arbora Community Registration - " + nameStr);
+      var bodyText = "Full Name: " + nameStr + " | WhatsApp: " + phoneStr + " | Hi Arbora Team, I would like to join the Arbora community.";
+      var gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=arboraretreats@gmail.com&su=" + subject + "&body=" + encodeURIComponent(bodyText);
+      window.open(gmailUrl, '_blank');
+    }
     function handleFormSubmit(e) {
       e.preventDefault();
       var name = document.getElementById('modalName') ? document.getElementById('modalName').value : 'Arboran';
       var phone = document.getElementById('modalPhone') ? document.getElementById('modalPhone').value : '';
-      var mailtoUrl = "mailto:arboraretreats@gmail.com?subject=New%20Arbora%20Registration:%20" + encodeURIComponent(name) + "&body=" + encodeURIComponent("Name: " + name + "
-WhatsApp: " + phone + "
-
-I would like to join the Arbora community.");
-      window.location.href = mailtoUrl;
-      alert('Thank you ' + name + '! Your registration has been sent to arboraretreats@gmail.com. We will contact you at ' + (phone || '+91 81238 17058') + ' via WhatsApp shortly.');
+      openGmailCompose(name, phone);
+      alert('Thank you ' + name + '! Directing you to Gmail compose for arboraretreats@gmail.com. We will also contact you at ' + (phone || '+91 81238 17058') + ' via WhatsApp.');
       closeModal();
     }
   </script>
