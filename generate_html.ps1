@@ -1,52 +1,27 @@
-# Convert all image assets to Base64
-$logoPath = "C:\Users\DELL\Downloads\logo-transparent.png"
-if (-not (Test-Path $logoPath)) {
-  $logoPath = "public\logo-mark-transparent.png"
-}
-$logoB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes($logoPath));
+# Static Image Asset URLs for Vercel Optimization
+$logoUrl = "/images/logo-transparent.png"
+$logoMarkUrl = "/images/pure-arch-tree-mark.png"
+$chukkiUrl = "/images/chukki-talkies.png"
+$adithyaMUrl = "/images/team/aditya-manjunath.png"
+$sumanaUrl = "/images/team/sumana-sarkar.png"
+$shashankUrl = "/images/team/shashank.png"
+$harshaUrl = "/images/team/harsha-janardhana-giri.png"
+$kavyaUrl = "/images/team/kavya-m.png"
 
-$logoMarkPath = "C:\Users\DELL\Downloads\pure-arch-tree-mark.png"
-if (-not (Test-Path $logoMarkPath)) {
-  $logoMarkPath = "public\logo-mark-transparent.png"
-}
-$logoMarkB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes($logoMarkPath));
-
-# Load Chukki Talkies Investor Logo Base64
-$chukkiPath = "C:\Users\DELL\Downloads\Chukki Talkies.png"
-if (-not (Test-Path $chukkiPath)) {
-  $chukkiPath = "public\logo-mark-transparent.png"
-}
-$chukkiB64 = ""
-if (Test-Path $chukkiPath) {
-  $chukkiB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes($chukkiPath));
-}
-
-$adithyaMB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\Users\DELL\Downloads\Aditya Manjunath.png"));
-$sumanaB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\Users\DELL\Downloads\Sumana Sarkar.png"));
-$shashankB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\Users\DELL\Downloads\Shashank.png"));
-$harshaB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\Users\DELL\Downloads\Mobile Devices\HarshaJanardhanaGiri.png"));
-
-$kavyaPath = "C:\Users\DELL\Downloads\Kavya M.png"
-if (-not (Test-Path $kavyaPath)) {
-  $kavyaPath = "c:\Users\DELL\.gemini\antigravity\scratch\myaiartmaker\public\logo-mark-transparent.png"
-}
-$kavyaB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes($kavyaPath));
-
-# Sura Stays Property Photos Base64 (ALL 6 PROPERTIES)
-$verandaB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\Users\DELL\Downloads\TribeAway\Varenda.png.jpeg"));
-$lakeViewB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\Users\DELL\Downloads\lake view .jpeg"));
-$diningB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\Users\DELL\Downloads\TribeAway\Dinning.png.jpeg"));
-$campfireB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\Users\DELL\Downloads\TribeAway\Camp Fire.png.jpeg"));
-$privateRoomB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\Users\DELL\Downloads\TribeAway\Private Room.png.jpeg"));
-$dormB64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\Users\DELL\Downloads\TribeAway\Dormitary Room.png.jpeg"));
+$verandaUrl = "/images/properties/varenda.jpeg"
+$lakeViewUrl = "/images/properties/lake-view.jpeg"
+$diningUrl = "/images/properties/dining.jpeg"
+$campfireUrl = "/images/properties/campfire.jpeg"
+$privateRoomUrl = "/images/properties/private-room.jpeg"
+$dormUrl = "/images/properties/dormitary-room.jpeg"
 
 # HERO BACKGROUND VIDEOS: OPTIMIZED FOR VERCEL HOSTING (STATIC FILES)
 Write-Host "Configuring Hero Desktop and Mobile video URLs for Vercel deployment..."
 
 # Chukki Talkies PROMINENT LOGO BOX snippet (Dark Inset Box #0B1712)
 $chukkiLogoHtml = ""
-if ($chukkiB64 -ne "") {
-  $chukkiLogoHtml = "<div class='w-full h-44 rounded-2xl bg-[#0B1712] border border-white/15 p-4 mb-4 flex items-center justify-center shadow-inner overflow-hidden'><img src='data:image/png;base64,$chukkiB64' alt='Chukki Talkies Logo' class='w-full h-full object-contain brightness-110 filter drop-shadow-md' /></div>"
+if ($chukkiUrl -ne "") {
+  $chukkiLogoHtml = "<div class='w-full h-44 rounded-2xl bg-[#0B1712] border border-white/15 p-4 mb-4 flex items-center justify-center shadow-inner overflow-hidden'><img src='$chukkiUrl' alt='Chukki Talkies Logo' class='w-full h-full object-contain brightness-110 filter drop-shadow-md' /></div>"
 }
 
 # -----------------------------------------------------------------------------
@@ -229,7 +204,7 @@ $mainHtmlContent = @"
       
       <!-- LOGO BRAND -->
       <a href="#" class="flex items-center gap-3 shrink-0 group my-auto">
-        <img id="headerLogo" src="data:image/png;base64,$logoMarkB64" alt="Arbora Icon Mark" class="h-9 md:h-11 w-auto object-contain transition-all duration-300 group-hover:scale-105 my-auto self-center shrink-0" />
+        <img id="headerLogo" src="$logoMarkUrl" alt="Arbora Icon Mark" class="h-9 md:h-11 w-auto object-contain transition-all duration-300 group-hover:scale-105 my-auto self-center shrink-0" />
         
         <div class="flex flex-col justify-center items-start my-auto">
           <span id="headerBrandText" class="font-sans text-base md:text-lg font-medium tracking-[0.24em] pl-[0.24em] text-[#EADBC8] leading-none uppercase group-hover:text-white transition-colors">A R B O R A</span>
@@ -532,7 +507,7 @@ $mainHtmlContent = @"
       <div class="desktop-only-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
         <div class="rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden hover:border-sandstoneGold transition-all flex flex-col justify-between group">
           <div class="relative h-60 w-full bg-[#D8E3DB] overflow-hidden">
-            <img src="data:image/jpeg;base64,$verandaB64" alt="The Estate Veranda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="$verandaUrl" alt="The Estate Veranda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <span class="absolute top-3 right-3 bg-[#12241C] text-warmCream font-montserrat text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Setting</span>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
@@ -544,7 +519,7 @@ $mainHtmlContent = @"
 
         <div class="rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden hover:border-sandstoneGold transition-all flex flex-col justify-between group">
           <div class="relative h-60 w-full bg-[#D8E3DB] overflow-hidden">
-            <img src="data:image/jpeg;base64,$lakeViewB64" alt="Serene Estate Lakeside View" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="$lakeViewUrl" alt="Serene Estate Lakeside View" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <span class="absolute top-3 right-3 bg-[#12241C] text-warmCream font-montserrat text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Setting</span>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
@@ -556,7 +531,7 @@ $mainHtmlContent = @"
 
         <div class="rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden hover:border-sandstoneGold transition-all flex flex-col justify-between group">
           <div class="relative h-60 w-full bg-[#D8E3DB] overflow-hidden">
-            <img src="data:image/jpeg;base64,$diningB64" alt="Communal Estate Dining" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="$diningUrl" alt="Communal Estate Dining" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <span class="absolute top-3 right-3 bg-[#12241C] text-warmCream font-montserrat text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Setting</span>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
@@ -568,7 +543,7 @@ $mainHtmlContent = @"
 
         <div class="rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden hover:border-sandstoneGold transition-all flex flex-col justify-between group">
           <div class="relative h-60 w-full bg-[#D8E3DB] overflow-hidden">
-            <img src="data:image/jpeg;base64,$campfireB64" alt="Starlit Campfire Grounds" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="$campfireUrl" alt="Starlit Campfire Grounds" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <span class="absolute top-3 right-3 bg-[#12241C] text-warmCream font-montserrat text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Setting</span>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
@@ -580,7 +555,7 @@ $mainHtmlContent = @"
 
         <div class="rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden hover:border-sandstoneGold transition-all flex flex-col justify-between group">
           <div class="relative h-60 w-full bg-[#D8E3DB] overflow-hidden">
-            <img src="data:image/jpeg;base64,$privateRoomB64" alt="Cozy Private Rooms" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="$privateRoomUrl" alt="Cozy Private Rooms" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <span class="absolute top-3 right-3 bg-[#12241C] text-warmCream font-montserrat text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Setting</span>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
@@ -592,7 +567,7 @@ $mainHtmlContent = @"
 
         <div class="rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden hover:border-sandstoneGold transition-all flex flex-col justify-between group">
           <div class="relative h-60 w-full bg-[#D8E3DB] overflow-hidden">
-            <img src="data:image/jpeg;base64,$dormB64" alt="Retreat Community Dorms" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="$dormUrl" alt="Retreat Community Dorms" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <span class="absolute top-3 right-3 bg-[#12241C] text-warmCream font-montserrat text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Setting</span>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
@@ -608,7 +583,7 @@ $mainHtmlContent = @"
         <div class="flex overflow-x-auto snap-x snap-mandatory gap-5 pb-6 -mx-6 px-6 no-scrollbar" onscroll="updateSectionDots(this, 'destDots', 6)">
           <div class="snap-center shrink-0 w-[85vw] max-w-[320px] rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden flex flex-col">
             <div class="relative h-56 w-full bg-[#D8E3DB]">
-              <img src="data:image/jpeg;base64,$verandaB64" alt="The Estate Veranda" class="w-full h-full object-cover" />
+              <img src="$verandaUrl" alt="The Estate Veranda" class="w-full h-full object-cover" />
             </div>
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">The Estate Veranda</h3>
@@ -619,7 +594,7 @@ $mainHtmlContent = @"
 
           <div class="snap-center shrink-0 w-[85vw] max-w-[320px] rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden flex flex-col">
             <div class="relative h-56 w-full bg-[#D8E3DB]">
-              <img src="data:image/jpeg;base64,$lakeViewB64" alt="Lakeside Reflection Zone" class="w-full h-full object-cover" />
+              <img src="$lakeViewUrl" alt="Lakeside Reflection Zone" class="w-full h-full object-cover" />
             </div>
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">Lakeside Reflection Zone</h3>
@@ -630,7 +605,7 @@ $mainHtmlContent = @"
 
           <div class="snap-center shrink-0 w-[85vw] max-w-[320px] rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden flex flex-col">
             <div class="relative h-56 w-full bg-[#D8E3DB]">
-              <img src="data:image/jpeg;base64,$diningB64" alt="Long-Table Courtyard" class="w-full h-full object-cover" />
+              <img src="$diningUrl" alt="Long-Table Courtyard" class="w-full h-full object-cover" />
             </div>
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">Long-Table Courtyard</h3>
@@ -641,7 +616,7 @@ $mainHtmlContent = @"
 
           <div class="snap-center shrink-0 w-[85vw] max-w-[320px] rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden flex flex-col">
             <div class="relative h-56 w-full bg-[#D8E3DB]">
-              <img src="data:image/jpeg;base64,$campfireB64" alt="Starlit Campfire Circle" class="w-full h-full object-cover" />
+              <img src="$campfireUrl" alt="Starlit Campfire Circle" class="w-full h-full object-cover" />
             </div>
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">Starlit Campfire Circle</h3>
@@ -652,7 +627,7 @@ $mainHtmlContent = @"
 
           <div class="snap-center shrink-0 w-[85vw] max-w-[320px] rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden flex flex-col">
             <div class="relative h-56 w-full bg-[#D8E3DB]">
-              <img src="data:image/jpeg;base64,$privateRoomB64" alt="Rest Spaces" class="w-full h-full object-cover" />
+              <img src="$privateRoomUrl" alt="Rest Spaces" class="w-full h-full object-cover" />
             </div>
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">Rest Spaces</h3>
@@ -663,7 +638,7 @@ $mainHtmlContent = @"
 
           <div class="snap-center shrink-0 w-[85vw] max-w-[320px] rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden flex flex-col">
             <div class="relative h-56 w-full bg-[#D8E3DB]">
-              <img src="data:image/jpeg;base64,$dormB64" alt="Dorm Quarters" class="w-full h-full object-cover" />
+              <img src="$dormUrl" alt="Dorm Quarters" class="w-full h-full object-cover" />
             </div>
             <div class="p-5 flex-1 flex flex-col justify-between">
               <h3 class="font-montserrat text-xl font-bold text-[#0A1F14] mb-2">Dorm Quarters</h3>
@@ -884,7 +859,7 @@ $mainHtmlContent = @"
           <div class="team-card-subtle p-5 flex flex-col justify-between">
             <div>
               <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-5">
-                <img src="data:image/png;base64,$adithyaMB64" alt="Adithya Manjunath" class="w-full h-full object-cover object-top" />
+                <img src="$adithyaMUrl" alt="Adithya Manjunath" class="w-full h-full object-cover object-top" />
                 <span class="absolute top-3 right-3 badge-overlay-dark">FOUNDER &amp; CEO</span>
               </div>
               
@@ -903,7 +878,7 @@ $mainHtmlContent = @"
           <div class="team-card-subtle p-5 flex flex-col justify-between">
             <div>
               <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-5">
-                <img src="data:image/png;base64,$sumanaB64" alt="Sumana Sarkar" class="w-full h-full object-cover object-top" />
+                <img src="$sumanaUrl" alt="Sumana Sarkar" class="w-full h-full object-cover object-top" />
                 <span class="absolute top-3 right-3 badge-overlay-dark">CO-FOUNDER</span>
               </div>
               
@@ -922,7 +897,7 @@ $mainHtmlContent = @"
           <div class="team-card-subtle p-5 flex flex-col justify-between">
             <div>
               <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-5">
-                <img src="data:image/png;base64,$shashankB64" alt="Shashank Madhu" class="w-full h-full object-cover object-top" />
+                <img src="$shashankUrl" alt="Shashank Madhu" class="w-full h-full object-cover object-top" />
                 <span class="absolute top-3 right-3 badge-overlay-dark">EXECUTIVE</span>
               </div>
               
@@ -953,7 +928,7 @@ $mainHtmlContent = @"
           <div class="team-card-compact p-4 flex flex-col justify-between">
             <div>
               <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-[#EADBC8]/20">
-                <img src="data:image/png;base64,$harshaB64" alt="Harsha Janardhana Giri" class="w-full h-full object-cover object-top" />
+                <img src="$harshaUrl" alt="Harsha Janardhana Giri" class="w-full h-full object-cover object-top" />
                 <span class="absolute top-2.5 right-2.5 badge-overlay-sm">LEAD TECH ARCHITECT</span>
               </div>
 
@@ -971,7 +946,7 @@ $mainHtmlContent = @"
           <div class="team-card-compact p-4 flex flex-col justify-between">
             <div>
               <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-[#EADBC8]/20">
-                <img src="data:image/png;base64,$kavyaB64" alt="Kavya M" class="w-full h-full object-cover object-top" />
+                <img src="$kavyaUrl" alt="Kavya M" class="w-full h-full object-cover object-top" />
                 <span class="absolute top-2.5 right-2.5 badge-overlay-sm">JAM ARTIST</span>
               </div>
 
@@ -1079,7 +1054,7 @@ $mainHtmlContent = @"
   <!-- FOOTER -->
   <footer class="py-14 px-6 bg-deepCanopy border-t border-white/10 text-center">
     <div class="max-w-4xl mx-auto flex flex-col items-center justify-center">
-      <img src="data:image/png;base64,$logoMarkB64" alt="Arbora Icon Mark" class="h-14 md:h-16 w-auto mb-4 object-contain self-center mx-auto" />
+      <img src="$logoMarkUrl" alt="Arbora Icon Mark" class="h-14 md:h-16 w-auto mb-4 object-contain self-center mx-auto" />
       <div class="flex flex-col items-center justify-center text-center mb-6">
         <span class="font-sans text-xl md:text-2xl font-medium tracking-[0.28em] pl-[0.28em] text-[#EADBC8] uppercase">A R B O R A</span>
         <span class="font-sans text-xs md:text-sm font-normal tracking-[0.22em] pl-[0.22em] text-[#EADBC8]/90 uppercase mt-1 flex items-center justify-center gap-1.5">
