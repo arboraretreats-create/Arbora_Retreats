@@ -177,10 +177,10 @@ $mainHtmlContent = @"
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     
-    .hero-fade-init { opacity: 0; transform: translateY(12px); transition: opacity 1200ms ease-out, transform 1200ms ease-out; }
+    .hero-fade-init { opacity: 1; transform: translateY(0); transition: opacity 1200ms ease-out, transform 1200ms ease-out; }
     .hero-fade-active { opacity: 1; transform: translateY(0); }
 
-    .reveal-on-scroll { opacity: 0; transform: translateY(20px); transition: opacity 600ms ease-out, transform 600ms ease-out; }
+    .reveal-on-scroll { opacity: 1; transform: translateY(0); transition: opacity 600ms ease-out, transform 600ms ease-out; }
     .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
 
     @media (max-width: 767px) {
