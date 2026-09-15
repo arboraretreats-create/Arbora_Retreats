@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italianno&family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Iko_Brand Luxury Palette */
+  --color-obsidian-pitch: #060608;
+  --color-obsidian-surface: #0E0E12;
+  --color-obsidian-card: #121218;
+  --color-cream-white: #F6F3EB;
+  --color-aged-silk: #EDE7DB;
+  --color-gold-muted: #C8A24D;
+  --color-gold-rich: #DFBE6E;
+  --color-gold-line: rgba(200, 162, 77, 0.25);
+  
+  /* Tier Accents */
+  --color-crimson-deep: #5C121A;
+  --color-crimson-vivid: #801B24;
+  --color-royal-blue: #0F223D;
+  --color-royal-azure: #1A365D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #060608;
+  color: #F6F3EB;
+}
+
+body {
+  background-color: #060608;
+  color: #F6F3EB;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: clip;
+  touch-action: pan-y;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Stable Viewport Engine (Replaces raw 100vh/100dvh) */
+.viewport-full {
+  height: 100svh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+::selection {
+  background-color: #C8A24D;
+  color: #060608;
+}
+
+/* Typography Hierarchy Classes (80/15/5 Formula) */
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1, "pnum" 1;
+}
+
+.font-modern {
+  font-family: 'Manrope', 'Inter', sans-serif;
+}
+
+.font-signature {
+  font-family: 'Italianno', 'Alex Brush', cursive;
+}
+
+.font-script-subtle {
+  font-family: 'Alex Brush', 'Italianno', cursive;
+}
+
+/* Hairline Luxury Borders */
+.border-gold-hairline {
+  border-color: rgba(200, 162, 77, 0.22);
+}
+
+.border-cream-hairline {
+  border-color: rgba(246, 243, 235, 0.12);
+}
+
+/* Subtle Restrained Gold Text / Accents (No heavy Photoshop fake glow) */
+.text-gold-accent {
+  color: #C8A24D;
+}
+
+.text-gold-gradient-restrained {
+  background: linear-gradient(135deg, #F6F3EB 0%, #DFBE6E 45%, #C8A24D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Monolithic Obsidian Glass */
+.iko-glass-monolith {
+  background: rgba(14, 14, 18, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(200, 162, 77, 0.18);
+}
+
+.iko-glass-monolith:hover {
+  border-color: rgba(200, 162, 77, 0.45);
+}
+
+/* Glassmorphic Vignette Shield for Section 4 Header Typography */
+.header-text-shield {
+  background: rgba(4, 9, 20, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060608;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(200, 162, 77, 0.3);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 162, 77, 0.6);
+}
+
+/* Directional Gold Swirl Specular Sweep & Traveling Glints for Section 4 */
+@keyframes swirlSpecularSweep {
+  0% {
+    transform: translate(-35%, -35%) rotate(25deg);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate(25%, 25%) rotate(35deg);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate(85%, 85%) rotate(45deg);
+    opacity: 0.25;
+  }
+}
+
+@keyframes swirlCounterSweep {
+  0% {
+    transform: translate(65%, -25%) rotate(-30deg);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translate(-20%, 50%) rotate(-45deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-75%, 105%) rotate(-55deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes goldPointGlint {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.3) rotate(0deg);
+    filter: drop-shadow(0 0 0px transparent);
+  }
+  25% {
+    opacity: 0.5;
+    transform: scale(0.9) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.6) rotate(90deg);
+    filter: drop-shadow(0 0 24px rgba(255, 235, 150, 1)) drop-shadow(0 0 45px rgba(230, 185, 80, 0.95)) drop-shadow(0 0 70px rgba(207, 162, 77, 0.8));
+  }
+  75% {
+    opacity: 0.6;
+    transform: scale(0.8) rotate(135deg);
+  }
+}
+
+.animate-swirl-sweep-1 {
+  animation: swirlSpecularSweep 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-swirl-sweep-2 {
+  animation: swirlCounterSweep 7.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation-delay: 1.8s;
+  will-change: transform, opacity;
+}
+
+.animate-point-glint-1 {
+  animation: goldPointGlint 3.8s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.animate-point-glint-2 {
+  animation: goldPointGlint 4.2s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+.animate-point-glint-3 {
+  animation: goldPointGlint 4.0s ease-in-out infinite;
+  animation-delay: 2.6s;
+}
+
+.animate-point-glint-4 {
+  animation: goldPointGlint 4.5s ease-in-out infinite;
+  animation-delay: 3.4s;
+}
+
+.animate-point-glint-5 {
+  animation: goldPointGlint 3.6s ease-in-out infinite;
+  animation-delay: 2.0s;
+}
+
+/* Radiant 3D Gold Accent Luminescence for Section 4 */
+@keyframes goldAccentGlow {
+  0%, 100% {
+    opacity: 0.35;
+    filter: brightness(1.15) contrast(1.15) saturate(1.2);
+  }
+  50% {
+    opacity: 0.9;
+    filter: brightness(1.6) contrast(1.3) saturate(1.4) drop-shadow(0 0 28px rgba(255, 215, 100, 0.65));
+  }
+}
+
+.animate-gold-accent-shimmer {
+  animation: goldAccentGlow 4s ease-in-out infinite;
+  will-change: opacity, filter;
+}
+
+/* Center-Stage Product Pedestal Glow */
+@keyframes centerPedestalGlow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.02);
+  }
+}
+
+.animate-center-pedestal {
+  animation: centerPedestalGlow 6s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
