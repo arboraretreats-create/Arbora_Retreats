@@ -219,6 +219,7 @@ $mainHtmlContent = @"
         <a href="#philosophy" class="hover:text-warmCream transition-colors">Philosophy</a>
         <a href="#pillars" class="hover:text-warmCream transition-colors">The Arbora Way</a>
         <a href="#community" class="hover:text-warmCream transition-colors">Arborans</a>
+        <a href="team" class="hover:text-warmCream transition-colors">Team</a>
         <a href="cohorts" class="text-sandstoneGold font-bold hover:text-white transition-colors">Gatherings &rarr;</a>
         <a href="#why-we-exist" class="hover:text-warmCream transition-colors">Why We Exist</a>
       </nav>
@@ -828,7 +829,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 09 — WHY ARBORA EXISTS & COMPLETE MERGED TEAM EXPERIENCE -->
+    <!-- 09 — WHY ARBORA EXISTS & OUR COMMUNITY STORY -->
   <section id="why-we-exist" class="py-24 px-6 bg-warmSage text-charcoalGreen scroll-mt-16">
     <div class="max-w-7xl mx-auto">
       
@@ -846,291 +847,12 @@ $mainHtmlContent = @"
         </p>
       </div>
 
-      <!-- 1. SUBSECTION: FOUNDERS & LEADERSHIP -->
-      <div class="mb-20">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-          <span class="font-montserrat text-xs font-bold text-[#3D5A45] uppercase tracking-widest block mb-1">FOUNDER BELIEF</span>
-          <h3 class="font-heading text-3xl md:text-5xl uppercase tracking-wider text-[#0D1C13]">THE BUILDERS OF ARBORA</h3>
-        </div>
-
-        <div class="desktop-only-grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-          
-          <!-- Adithya Manjunath -->
-          <div class="team-card-subtle p-5 flex flex-col justify-between">
-            <div>
-              <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-5">
-                <img src="$adithyaMUrl" alt="Adithya Manjunath" class="w-full h-full object-cover object-top" />
-                <span class="absolute top-3 right-3 badge-overlay-dark">FOUNDER &amp; CEO</span>
-              </div>
-              
-              <h4 class="font-montserrat text-2xl font-bold text-[#111111] mb-0.5">Adithya Manjunath</h4>
-              <p class="font-montserrat text-[11px] text-[#3D5A45] font-bold uppercase mb-3">FOUNDER &amp; CEO</p>
-              <p class="font-sans text-xs text-[#222222] leading-relaxed mb-4">Leads Arbora's community vision, brand strategy, estate partnerships, and expansion.</p>
-            </div>
-
-            <div class="philosophy-box space-y-1.5 font-sans text-xs text-[#222222]">
-              <p><span class="font-bold text-[#111111]">&bull; Personal Belief:</span> <br /><span class="italic">&quot;Travel is meaningless without genuine human presence.&quot;</span></p>
-              <p><span class="font-bold text-[#111111]">&bull; Favorite Experience:</span> <br /><span>Campfire Acoustic Jams, Western Ghats</span></p>
-            </div>
-          </div>
-
-          <!-- Sumana Sarkar -->
-          <div class="team-card-subtle p-5 flex flex-col justify-between">
-            <div>
-              <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-5">
-                <img src="$sumanaUrl" alt="Sumana Sarkar" class="w-full h-full object-cover object-top" />
-                <span class="absolute top-3 right-3 badge-overlay-dark">CO-FOUNDER</span>
-              </div>
-              
-              <h4 class="font-montserrat text-2xl font-bold text-[#111111] mb-0.5">Sumana Sarkar</h4>
-              <p class="font-montserrat text-[11px] text-[#3D5A45] font-bold uppercase mb-3">CO-FOUNDER - STRATEGY &amp; MARKETING</p>
-              <p class="font-sans text-xs text-[#222222] leading-relaxed mb-4">Shapes the strategic vision, audience engagement, positioning, and storytelling for Arbora.</p>
-            </div>
-
-            <div class="philosophy-box space-y-1.5 font-sans text-xs text-[#222222]">
-              <p><span class="font-bold text-[#111111]">&bull; Personal Belief:</span> <br /><span class="italic">&quot;Creating spaces where strangers transform into lifelong friends.&quot;</span></p>
-              <p><span class="font-bold text-[#111111]">&bull; Favorite Experience:</span> <br /><span>Coffee Canopy Hikes, Chikmagalur</span></p>
-            </div>
-          </div>
-
-          <!-- Shashank Madhu -->
-          <div class="team-card-subtle p-5 flex flex-col justify-between">
-            <div>
-              <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-5">
-                <img src="$shashankUrl" alt="Shashank Madhu" class="w-full h-full object-cover object-top" />
-                <span class="absolute top-3 right-3 badge-overlay-dark">EXECUTIVE</span>
-              </div>
-              
-              <h4 class="font-montserrat text-2xl font-bold text-[#111111] mb-0.5">Shashank Madhu</h4>
-              <p class="font-montserrat text-[11px] text-[#3D5A45] font-bold uppercase mb-3">EXECUTIVE - EXPERIENCE &amp; OPERATIONS</p>
-              <p class="font-sans text-xs text-[#222222] leading-relaxed mb-4">Coordinates on-ground logistics, local host integrations, and event execution for seamless experiences.</p>
-            </div>
-
-            <div class="philosophy-box space-y-1.5 font-sans text-xs text-[#222222]">
-              <p><span class="font-bold text-[#111111]">&bull; Personal Belief:</span> <br /><span class="italic">&quot;Flawless execution unlocks effortless community connection.&quot;</span></p>
-              <p><span class="font-bold text-[#111111]">&bull; Favorite Experience:</span> <br /><span>Stream Dip Trails, Mudigere</span></p>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Mobile Touch Carousel for Founders (3 Cards) -->
-        <div class="mobile-only-carousel flex-col text-left">
-          <div class="flex overflow-x-auto snap-x snap-mandatory gap-5 pb-6 -mx-6 px-6 no-scrollbar" onscroll="updateSectionDots(this, 'founderDots', 3)">
-            
-            <!-- Adithya Manjunath -->
-            <div class="snap-center shrink-0 w-[85vw] max-w-[320px] team-card-subtle p-5 flex flex-col justify-between">
-              <div>
-                <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-4">
-                  <img src="$adithyaMUrl" alt="Adithya Manjunath" class="w-full h-full object-cover object-top" />
-                  <span class="absolute top-3 right-3 badge-overlay-dark">FOUNDER &amp; CEO</span>
-                </div>
-                <h4 class="font-montserrat text-xl font-bold text-[#111111] mb-0.5">Adithya Manjunath</h4>
-                <p class="font-montserrat text-[10px] text-[#3D5A45] font-bold uppercase mb-2">FOUNDER &amp; CEO</p>
-                <p class="font-sans text-xs text-[#222222] leading-relaxed mb-3">Leads Arbora's community vision, brand strategy, estate partnerships, and expansion.</p>
-              </div>
-              <div class="philosophy-box space-y-1 font-sans text-xs text-[#222222]">
-                <p><span class="font-bold text-[#111111]">&bull; Belief:</span> <span class="italic">&quot;Travel is meaningless without genuine human presence.&quot;</span></p>
-              </div>
-            </div>
-
-            <!-- Sumana Sarkar -->
-            <div class="snap-center shrink-0 w-[85vw] max-w-[320px] team-card-subtle p-5 flex flex-col justify-between">
-              <div>
-                <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-4">
-                  <img src="$sumanaUrl" alt="Sumana Sarkar" class="w-full h-full object-cover object-top" />
-                  <span class="absolute top-3 right-3 badge-overlay-dark">CO-FOUNDER</span>
-                </div>
-                <h4 class="font-montserrat text-xl font-bold text-[#111111] mb-0.5">Sumana Sarkar</h4>
-                <p class="font-montserrat text-[10px] text-[#3D5A45] font-bold uppercase mb-2">CO-FOUNDER &middot; STRATEGY &amp; MARKETING</p>
-                <p class="font-sans text-xs text-[#222222] leading-relaxed mb-3">Shapes the strategic vision, audience engagement, positioning, and storytelling for Arbora.</p>
-              </div>
-              <div class="philosophy-box space-y-1 font-sans text-xs text-[#222222]">
-                <p><span class="font-bold text-[#111111]">&bull; Belief:</span> <span class="italic">&quot;Creating spaces where strangers transform into lifelong friends.&quot;</span></p>
-              </div>
-            </div>
-
-            <!-- Shashank Madhu -->
-            <div class="snap-center shrink-0 w-[85vw] max-w-[320px] team-card-subtle p-5 flex flex-col justify-between">
-              <div>
-                <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-4">
-                  <img src="$shashankUrl" alt="Shashank Madhu" class="w-full h-full object-cover object-top" />
-                  <span class="absolute top-3 right-3 badge-overlay-dark">EXECUTIVE</span>
-                </div>
-                <h4 class="font-montserrat text-xl font-bold text-[#111111] mb-0.5">Shashank Madhu</h4>
-                <p class="font-montserrat text-[10px] text-[#3D5A45] font-bold uppercase mb-2">OPERATIONS &amp; RETREAT EXPERIENCE</p>
-                <p class="font-sans text-xs text-[#222222] leading-relaxed mb-3">Manages retreat operations, hospitality standards, on-site logistics, and Arboran experiences.</p>
-              </div>
-              <div class="philosophy-box space-y-1 font-sans text-xs text-[#222222]">
-                <p><span class="font-bold text-[#111111]">&bull; Belief:</span> <span class="italic">&quot;Flawless execution unlocks effortless community connection.&quot;</span></p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="flex items-center justify-center mt-3">
-            <div id="founderDots" class="flex items-center gap-1.5">
-              <span class="h-2 w-7 bg-[#12241C] rounded-full transition-all duration-300"></span>
-              <span class="h-2 w-2 bg-[#C4D3C9] rounded-full transition-all duration-300"></span>
-              <span class="h-2 w-2 bg-[#C4D3C9] rounded-full transition-all duration-300"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2. SUBSECTION: TECHNICAL & CREATIVE EXECUTION -->
-      <div class="mb-24">
-        <div class="text-center max-w-2xl mx-auto mb-8">
-          <span class="font-montserrat text-[11px] font-bold text-[#3D5A45] uppercase tracking-widest block mb-1">TECHNICAL &amp; CREATIVE EXECUTION</span>
-          <h3 class="font-heading text-2xl md:text-4xl uppercase tracking-wider text-[#0D1C13]">PLATFORM &amp; ARTIST LEADS</h3>
-        </div>
-
-        <div class="desktop-only-grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch max-w-2xl mx-auto">
-          
-          <!-- Harsha Janardhana Giri -->
-          <div class="team-card-compact p-4 flex flex-col justify-between">
-            <div>
-              <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-[#EADBC8]/20">
-                <img src="$harshaUrl" alt="Harsha Janardhana Giri" class="w-full h-full object-cover object-top" />
-                <span class="absolute top-2.5 right-2.5 badge-overlay-sm">LEAD TECH ARCHITECT</span>
-              </div>
-
-              <h4 class="font-montserrat text-lg font-bold text-[#111111] mb-0.5">Harsha Janardhana Giri</h4>
-              <p class="font-montserrat text-[10px] text-[#3D5A45] font-bold uppercase mb-2">TECHNOLOGY &amp; BACKEND LEAD</p>
-              <p class="font-sans text-[11px] text-[#222222] leading-relaxed mb-3">Architected and maintains Arbora's digital infrastructure and community platform technology.</p>
-            </div>
-
-            <div class="philosophy-box-sm space-y-1 font-sans text-[11px] text-[#222222]">
-              <p><span class="font-bold text-[#111111]">&bull; Personal Belief:</span> <br /><span class="italic">&quot;Seamless tech that gets out of the way of real life.&quot;</span></p>
-            </div>
-          </div>
-
-          <!-- Kavya M -->
-          <div class="team-card-compact p-4 flex flex-col justify-between">
-            <div>
-              <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-[#EADBC8]/20">
-                <img src="$kavyaUrl" alt="Kavya M" class="w-full h-full object-cover object-top" />
-                <span class="absolute top-2.5 right-2.5 badge-overlay-sm">JAM ARTIST</span>
-              </div>
-
-              <h4 class="font-montserrat text-lg font-bold text-[#111111] mb-0.5">Kavya M</h4>
-              <p class="font-montserrat text-[10px] text-[#3D5A45] font-bold uppercase mb-2">SINGER &middot; JAM ARTIST</p>
-              <p class="font-sans text-[11px] text-[#222222] leading-relaxed mb-3">Soulful vocals that bring people together across fireside sessions and acoustic evening circles.</p>
-            </div>
-
-            <div class="philosophy-box-sm space-y-1 font-sans text-[11px] text-[#222222]">
-              <p><span class="font-bold text-[#111111]">&bull; Personal Belief:</span> <br /><span class="italic">&quot;Music creates the unscripted magic where strangers become family.&quot;</span></p>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Mobile Touch Carousel for Platform & Artist Leads (2 Cards) -->
-        <div class="mobile-only-carousel flex-col text-left">
-          <div class="flex overflow-x-auto snap-x snap-mandatory gap-5 pb-6 -mx-6 px-6 no-scrollbar" onscroll="updateSectionDots(this, 'leadDots', 2)">
-            
-            <!-- Harsha Janardhana Giri -->
-            <div class="snap-center shrink-0 w-[85vw] max-w-[320px] team-card-compact p-4 flex flex-col justify-between">
-              <div>
-                <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-[#EADBC8]/20">
-                  <img src="$harshaUrl" alt="Harsha Janardhana Giri" class="w-full h-full object-cover object-top" />
-                  <span class="absolute top-2.5 right-2.5 badge-overlay-sm">LEAD TECH ARCHITECT</span>
-                </div>
-                <h4 class="font-montserrat text-lg font-bold text-[#111111] mb-0.5">Harsha Janardhana Giri</h4>
-                <p class="font-montserrat text-[10px] text-[#3D5A45] font-bold uppercase mb-2">TECHNOLOGY &amp; BACKEND LEAD</p>
-                <p class="font-sans text-[11px] text-[#222222] leading-relaxed mb-3">Architected and maintains Arbora's digital infrastructure and community platform technology.</p>
-              </div>
-              <div class="philosophy-box-sm space-y-1 font-sans text-[11px] text-[#222222]">
-                <p><span class="font-bold text-[#111111]">&bull; Belief:</span> <span class="italic">&quot;Seamless tech that gets out of the way of real life.&quot;</span></p>
-              </div>
-            </div>
-
-            <!-- Kavya M -->
-            <div class="snap-center shrink-0 w-[85vw] max-w-[320px] team-card-compact p-4 flex flex-col justify-between">
-              <div>
-                <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-[#EADBC8]/20">
-                  <img src="$kavyaUrl" alt="Kavya M" class="w-full h-full object-cover object-top" />
-                  <span class="absolute top-2.5 right-2.5 badge-overlay-sm">JAM ARTIST</span>
-                </div>
-                <h4 class="font-montserrat text-lg font-bold text-[#111111] mb-0.5">Kavya M</h4>
-                <p class="font-montserrat text-[10px] text-[#3D5A45] font-bold uppercase mb-2">SINGER &middot; JAM ARTIST</p>
-                <p class="font-sans text-[11px] text-[#222222] leading-relaxed mb-3">Soulful vocals that bring people together across fireside sessions and acoustic evening circles.</p>
-              </div>
-              <div class="philosophy-box-sm space-y-1 font-sans text-[11px] text-[#222222]">
-                <p><span class="font-bold text-[#111111]">&bull; Belief:</span> <span class="italic">&quot;Music creates the unscripted magic where strangers become family.&quot;</span></p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="flex items-center justify-center mt-3">
-            <div id="leadDots" class="flex items-center gap-1.5">
-              <span class="h-2 w-7 bg-[#12241C] rounded-full transition-all duration-300"></span>
-              <span class="h-2 w-2 bg-[#C4D3C9] rounded-full transition-all duration-300"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-        
-
-          
-
-      <!-- 3. SUBSECTION: STRATEGIC BACKERS & INVESTORS -->
-      <div class="mb-24">
-        <div class="text-center max-w-2xl mx-auto mb-10">
-          <span class="font-montserrat text-xs font-bold text-[#3D5A45] uppercase tracking-widest block mb-1">STRATEGIC BACKERS</span>
-          <h3 class="font-heading text-4xl md:text-5xl uppercase tracking-wider text-[#0D1C13]">INVESTORS</h3>
-        </div>
-
-        <div class="investor-outer-card p-8 md:p-12 relative overflow-hidden shadow-2xl">
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-            
-            <!-- Featured Partner Card -->
-            <div class="lg:col-span-2">
-              <span class="inline-block bg-[#1A3327] border border-[#C5A880]/40 text-[#EADBC8] text-[10px] font-extrabold uppercase tracking-widest px-3.5 py-1 rounded-full mb-5">
-                &#9733; STRATEGIC INVESTOR
-              </span>
-              
-              $chukkiLogoHtml
-
-              <h4 class="font-heading text-3xl md:text-5xl uppercase tracking-wider text-[#EADBC8] mb-2">CHUKKI TALKIES</h4>
-              <p class="font-montserrat text-xs text-[#C5A880] font-bold uppercase mb-4">MEDIA &amp; VENTURE CAPITAL PARTNER</p>
-              <p class="font-sans text-xs md:text-sm text-[#A3B8AD] leading-relaxed font-medium max-w-2xl mb-6">
-                Chukki Talkies is Arbora's lead strategic investor and media distribution partner. Backing Arbora with venture capital, production excellence, and cultural reach across South India, Chukki Talkies empowers our long-term vision of building a community brand across the Western Ghats.
-              </p>
-
-              <div class="p-4 rounded-2xl bg-[#0B1712] border border-white/15 font-sans text-xs space-y-2 text-[#A3B8AD] max-w-lg">
-                <div class="flex items-center gap-2">
-                  <span class="text-[#C5A880] font-bold">&#10004;</span>
-                  <span>Lead Media Distribution &amp; Cultural Reach Partner</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-[#C5A880] font-bold">&#10004;</span>
-                  <span>Venture Capital &amp; Regional Growth Backer</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Side Highlight Card -->
-            <div class="lg:col-span-1 h-full flex flex-col justify-center">
-              <div class="bg-[#0B1712] border border-[#C5A880]/30 rounded-3xl p-8 text-center flex flex-col items-center justify-center min-h-[220px] shadow-2xl">
-                <span class="font-heading text-3xl text-[#C5A880] uppercase tracking-wider block mb-2">VENTURE PARTNER</span>
-                <span class="font-montserrat text-xs text-[#EADBC8]/90 uppercase tracking-widest font-bold">CHUKKI TALKIES &bull; MEDIA &amp; CAPITAL</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- 4. SUBSECTION: THE ARBORA STORY -->
-      <div class="investor-outer-card p-10 md:p-14 mb-10 max-w-5xl mx-auto shadow-2xl">
+      <!-- THE ARBORA STORY & MEET THE TEAM CTA -->
+      <div class="investor-outer-card p-10 md:p-14 max-w-5xl mx-auto shadow-2xl">
         <span class="font-montserrat text-xs font-bold text-[#C5A880] uppercase tracking-widest block mb-2">ORIGIN &amp; VISION</span>
         <h3 class="font-heading text-3xl md:text-5xl uppercase tracking-wider text-[#EADBC8] mb-6">THE ARBORA STORY</h3>
         
-        <div class="space-y-4 font-sans text-xs md:text-sm text-[#A3B8AD] leading-relaxed font-medium">
+        <div class="space-y-4 font-sans text-xs md:text-sm text-[#A3B8AD] leading-relaxed font-medium mb-10">
           <p>
             Arbora was founded in 2026 out of a simple observation: conventional travel platforms treat accommodation as a transactional line item. Guests book rooms, check in, stay isolated, and check out without ever experiencing true human connection or regional immersion.
           </p>
@@ -1140,6 +862,17 @@ $mainHtmlContent = @"
           <p>
             Supported by Chukki Talkies as our strategic media and investment partner, Arbora is scaling across Chikmagalur, Coorg, Gokarna, and the Western Ghats.
           </p>
+        </div>
+
+        <!-- CTA TO TEAM PAGE -->
+        <div class="pt-6 border-t border-white/10 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="text-left">
+            <h4 class="font-montserrat text-base font-bold text-crispLinen">Meet The Builders Of Arbora</h4>
+            <p class="font-sans text-xs text-mutedSage">Discover the founders, technology architects, artists, and investors shaping Arbora.</p>
+          </div>
+          <a href="team" class="shrink-0 inline-flex items-center gap-2.5 btn-shine-clean font-montserrat text-xs font-bold uppercase tracking-widest px-8 py-3.5 rounded-full shadow-2xl hover:scale-105 transition-transform">
+            <span>MEET THE TEAM &rarr;</span>
+          </a>
         </div>
       </div>
 
@@ -1190,11 +923,11 @@ $mainHtmlContent = @"
       <form onsubmit="handleFormSubmit(event)" class="space-y-4">
         <div>
           <label class="block font-montserrat text-xs uppercase font-semibold text-mutedSage mb-1">Full Name *</label>
-          <input type="text" required placeholder="Rahul Sharma" class="w-full bg-midPine border border-white/15 rounded-xl px-4 py-2.5 font-sans text-sm text-crispLinen focus:outline-none focus:border-warmCream" />
+          <input type="text" required id="modalName" placeholder="Rahul Sharma" class="w-full bg-midPine border border-white/15 rounded-xl px-4 py-2.5 font-sans text-sm text-crispLinen focus:outline-none focus:border-warmCream" />
         </div>
         <div>
           <label class="block font-montserrat text-xs uppercase font-semibold text-mutedSage mb-1">WhatsApp Number *</label>
-          <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-midPine border border-white/15 rounded-xl px-4 py-2.5 font-sans text-sm text-crispLinen focus:outline-none focus:border-warmCream" />
+          <input type="tel" required id="modalPhone" placeholder="+91 81238 17058" class="w-full bg-midPine border border-white/15 rounded-xl px-4 py-2.5 font-sans text-sm text-crispLinen focus:outline-none focus:border-warmCream" />
         </div>
         <button type="submit" class="w-full btn-shine-clean font-montserrat py-3 rounded-xl font-bold text-xs uppercase tracking-widest">Join the Community &rarr;</button>
       </form>
@@ -1356,7 +1089,14 @@ $mainHtmlContent = @"
     function closeModal() { document.getElementById('bookingModal').classList.add('hidden'); }
     function handleFormSubmit(e) {
       e.preventDefault();
-      alert('Welcome to Arbora! You are now registered as an Arboran. Our team will reach out with upcoming community gathering invites.');
+      var name = document.getElementById('modalName') ? document.getElementById('modalName').value : 'Arboran';
+      var phone = document.getElementById('modalPhone') ? document.getElementById('modalPhone').value : '';
+      var mailtoUrl = "mailto:arboraretreats@gmail.com?subject=New%20Arbora%20Registration:%20" + encodeURIComponent(name) + "&body=" + encodeURIComponent("Name: " + name + "
+WhatsApp: " + phone + "
+
+I would like to join the Arbora community.");
+      window.location.href = mailtoUrl;
+      alert('Thank you ' + name + '! Your registration has been sent to arboraretreats@gmail.com. We will contact you at ' + (phone || '+91 81238 17058') + ' via WhatsApp shortly.');
       closeModal();
     }
   </script>
