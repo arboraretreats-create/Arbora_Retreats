@@ -1,261 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Italianno&family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
-@import "tailwindcss";
-
-:root {
-  /* Iko_Brand Luxury Palette */
-  --color-obsidian-pitch: #060608;
-  --color-obsidian-surface: #0E0E12;
-  --color-obsidian-card: #121218;
-  --color-cream-white: #F6F3EB;
-  --color-aged-silk: #EDE7DB;
-  --color-gold-muted: #C8A24D;
-  --color-gold-rich: #DFBE6E;
-  --color-gold-line: rgba(200, 162, 77, 0.25);
-  
-  /* Tier Accents */
-  --color-crimson-deep: #5C121A;
-  --color-crimson-vivid: #801B24;
-  --color-royal-blue: #0F223D;
-  --color-royal-azure: #1A365D;
-}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 * {
-  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
-html {
-  background-color: #060608;
-  color: #F6F3EB;
+html, body {
+  background-color: #0B1712 !important;
+  color: #F1F5F2 !important;
+  font-family: 'Arial', 'Inter', sans-serif !important;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  background-color: #060608;
-  color: #F6F3EB;
-  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  overflow-x: clip;
-  touch-action: pan-y;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.font-heading { font-family: 'Anton', 'Bebas Neue', 'Impact', sans-serif !important; }
+.glass-nav { background: rgba(11, 23, 18, 0.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+.glass-card-light { background: #F8F6F0; color: #0D1C13; border: 1px solid #C4D3C9; }
+
+.team-card-subtle {
+  background-color: #F4F0EA !important;
+  color: #111111 !important;
+  border: 1px solid #C4D3C9 !important;
+  border-radius: 1.75rem !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4) !important;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.team-card-subtle:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5) !important;
 }
 
-/* Stable Viewport Engine (Replaces raw 100vh/100dvh) */
-.viewport-full {
-  height: 100svh;
-  height: calc(var(--vh, 1vh) * 100);
+.team-card-compact {
+  background-color: #F4F0EA !important;
+  color: #111111 !important;
+  border: 1px solid #C4D3C9 !important;
+  border-radius: 1.5rem !important;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.35) !important;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.team-card-compact:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.45) !important;
 }
 
-::selection {
-  background-color: #C8A24D;
-  color: #060608;
+.badge-overlay-dark {
+  background-color: #1A3327 !important;
+  color: #EADBC8 !important;
+  border: 1px solid #C5A880 !important;
+  padding: 5px 14px !important;
+  border-radius: 9999px !important;
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
 }
 
-/* Typography Hierarchy Classes (80/15/5 Formula) */
-.font-editorial {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-variant-numeric: lining-nums;
-  font-feature-settings: "lnum" 1, "pnum" 1;
+.badge-overlay-sm {
+  background-color: #1A3327 !important;
+  color: #EADBC8 !important;
+  border: 1px solid #C5A880 !important;
+  padding: 4px 11px !important;
+  border-radius: 9999px !important;
+  font-size: 9.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
 }
 
-.font-modern {
-  font-family: 'Manrope', 'Inter', sans-serif;
+.philosophy-box {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2EAE5 !important;
+  border-radius: 0.85rem !important;
+  padding: 12px 14px !important;
 }
 
-.font-signature {
-  font-family: 'Italianno', 'Alex Brush', cursive;
+.philosophy-box-sm {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2EAE5 !important;
+  border-radius: 0.75rem !important;
+  padding: 10px 12px !important;
 }
 
-.font-script-subtle {
-  font-family: 'Alex Brush', 'Italianno', cursive;
+.investor-outer-card {
+  background-color: #12241C !important;
+  border: 1.5px solid rgba(234, 219, 200, 0.35) !important;
+  border-radius: 1.75rem !important;
 }
 
-/* Hairline Luxury Borders */
-.border-gold-hairline {
-  border-color: rgba(200, 162, 77, 0.22);
+.btn-shine-clean {
+  background-color: #EADBC8 !important;
+  color: #0B1712 !important;
+  border: 1px solid transparent;
+  box-shadow: none !important;
+  transition: background-color 100ms ease-out, color 100ms ease-out, transform 100ms ease-out !important;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-shine-clean:hover, 
+.btn-shine-clean:focus, 
+.btn-shine-clean:active, 
+.btn-shine-clean.touch-active,
+.touch-active {
+  background-color: #FFFFFF !important;
+  color: #0B1712 !important;
+  box-shadow: none !important;
+  transform: scale(0.96) !important;
 }
 
-.border-cream-hairline {
-  border-color: rgba(246, 243, 235, 0.12);
-}
+.badge-oat { background: rgba(216, 196, 182, 0.15); color: #D8C4B6; border: 1px solid rgba(216, 196, 182, 0.3); }
+.badge-gold { background: rgba(197, 168, 128, 0.15); color: #C5A880; border: 1px solid rgba(197, 168, 128, 0.3); }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-/* Subtle Restrained Gold Text / Accents (No heavy Photoshop fake glow) */
-.text-gold-accent {
-  color: #C8A24D;
-}
+.hero-fade-init { opacity: 0; transform: translateY(12px); transition: opacity 1200ms ease-out, transform 1200ms ease-out; }
+.hero-fade-active { opacity: 1; transform: translateY(0); }
 
-.text-gold-gradient-restrained {
-  background: linear-gradient(135deg, #F6F3EB 0%, #DFBE6E 45%, #C8A24D 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+.reveal-on-scroll { opacity: 0; transform: translateY(20px); transition: opacity 600ms ease-out, transform 600ms ease-out; }
+.reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
 
-/* Monolithic Obsidian Glass */
-.iko-glass-monolith {
-  background: rgba(14, 14, 18, 0.75);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(200, 162, 77, 0.18);
+@media (max-width: 767px) {
+  .desktop-only-grid { display: none !important; }
+  .mobile-only-carousel { display: flex !important; }
 }
-
-.iko-glass-monolith:hover {
-  border-color: rgba(200, 162, 77, 0.45);
+@media (min-width: 768px) {
+  .desktop-only-grid { display: grid !important; }
+  .mobile-only-carousel { display: none !important; }
 }
-
-/* Glassmorphic Vignette Shield for Section 4 Header Typography */
-.header-text-shield {
-  background: rgba(4, 9, 20, 0.75);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(212, 175, 55, 0.28);
-  border-radius: 16px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-}
-
-/* Scrollbar */
-.no-scrollbar::-webkit-scrollbar {
-  display: none !important;
-}
-.no-scrollbar {
-  -ms-overflow-style: none !important;
-  scrollbar-width: none !important;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #060608;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(200, 162, 77, 0.3);
-  border-radius: 2px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(200, 162, 77, 0.6);
-}
-
-/* Directional Gold Swirl Specular Sweep & Traveling Glints for Section 4 */
-@keyframes swirlSpecularSweep {
-  0% {
-    transform: translate(-35%, -35%) rotate(25deg);
-    opacity: 0.25;
-  }
-  50% {
-    transform: translate(25%, 25%) rotate(35deg);
-    opacity: 0.95;
-  }
-  100% {
-    transform: translate(85%, 85%) rotate(45deg);
-    opacity: 0.25;
-  }
-}
-
-@keyframes swirlCounterSweep {
-  0% {
-    transform: translate(65%, -25%) rotate(-30deg);
-    opacity: 0.2;
-  }
-  50% {
-    transform: translate(-20%, 50%) rotate(-45deg);
-    opacity: 0.9;
-  }
-  100% {
-    transform: translate(-75%, 105%) rotate(-55deg);
-    opacity: 0.2;
-  }
-}
-
-@keyframes goldPointGlint {
-  0%, 100% {
-    opacity: 0;
-    transform: scale(0.3) rotate(0deg);
-    filter: drop-shadow(0 0 0px transparent);
-  }
-  25% {
-    opacity: 0.5;
-    transform: scale(0.9) rotate(45deg);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.6) rotate(90deg);
-    filter: drop-shadow(0 0 24px rgba(255, 235, 150, 1)) drop-shadow(0 0 45px rgba(230, 185, 80, 0.95)) drop-shadow(0 0 70px rgba(207, 162, 77, 0.8));
-  }
-  75% {
-    opacity: 0.6;
-    transform: scale(0.8) rotate(135deg);
-  }
-}
-
-.animate-swirl-sweep-1 {
-  animation: swirlSpecularSweep 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-  will-change: transform, opacity;
-}
-
-.animate-swirl-sweep-2 {
-  animation: swirlCounterSweep 7.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-  animation-delay: 1.8s;
-  will-change: transform, opacity;
-}
-
-.animate-point-glint-1 {
-  animation: goldPointGlint 3.8s ease-in-out infinite;
-  animation-delay: 0.3s;
-}
-
-.animate-point-glint-2 {
-  animation: goldPointGlint 4.2s ease-in-out infinite;
-  animation-delay: 1.5s;
-}
-
-.animate-point-glint-3 {
-  animation: goldPointGlint 4.0s ease-in-out infinite;
-  animation-delay: 2.6s;
-}
-
-.animate-point-glint-4 {
-  animation: goldPointGlint 4.5s ease-in-out infinite;
-  animation-delay: 3.4s;
-}
-
-.animate-point-glint-5 {
-  animation: goldPointGlint 3.6s ease-in-out infinite;
-  animation-delay: 2.0s;
-}
-
-/* Radiant 3D Gold Accent Luminescence for Section 4 */
-@keyframes goldAccentGlow {
-  0%, 100% {
-    opacity: 0.35;
-    filter: brightness(1.15) contrast(1.15) saturate(1.2);
-  }
-  50% {
-    opacity: 0.9;
-    filter: brightness(1.6) contrast(1.3) saturate(1.4) drop-shadow(0 0 28px rgba(255, 215, 100, 0.65));
-  }
-}
-
-.animate-gold-accent-shimmer {
-  animation: goldAccentGlow 4s ease-in-out infinite;
-  will-change: opacity, filter;
-}
-
-/* Center-Stage Product Pedestal Glow */
-@keyframes centerPedestalGlow {
-  0%, 100% {
-    opacity: 0.35;
-    transform: scale(0.98);
-  }
-  50% {
-    opacity: 0.65;
-    transform: scale(1.02);
-  }
-}
-
-.animate-center-pedestal {
-  animation: centerPedestalGlow 6s ease-in-out infinite;
-  will-change: opacity, transform;
-}
-
