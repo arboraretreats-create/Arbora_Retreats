@@ -200,34 +200,36 @@ $mainHtmlContent = @"
 
   <!-- NAVIGATION HEADER -->
   <header id="mainHeader" class="fixed top-0 left-0 w-full z-50 glass-nav py-3 transition-all duration-500 hero-fade-init">
-    <div class="max-w-[1400px] mx-auto px-4 md:px-8 flex justify-between items-center h-14 md:h-16">
+    <div class="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-10 flex justify-between items-center h-16 md:h-20">
       
       <!-- LOGO BRAND -->
-      <a href="#" class="flex items-center gap-3 shrink-0 group my-auto">
-        <img id="headerLogo" src="$logoMarkUrl" alt="Arbora Icon Mark" class="h-9 md:h-11 w-auto object-contain transition-all duration-300 group-hover:scale-105 my-auto self-center shrink-0" />
+      <a href="#" class="flex items-center gap-2.5 sm:gap-3.5 shrink-0 group my-auto">
+        <img id="headerLogo" src="$logoMarkUrl" alt="Arbora Icon Mark" class="h-9 sm:h-10 md:h-11 lg:h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105 my-auto self-center shrink-0" />
         
         <div class="flex flex-col justify-center items-start my-auto">
-          <span id="headerBrandText" class="font-sans text-base md:text-lg font-medium tracking-[0.24em] pl-[0.24em] text-[#EADBC8] leading-none uppercase group-hover:text-white transition-colors">A R B O R A</span>
-          <span class="font-sans text-[8px] md:text-[9px] font-normal tracking-[0.16em] pl-[0.16em] text-[#EADBC8]/80 leading-none uppercase mt-1 flex items-center gap-1 whitespace-nowrap">
-            COMMUNITY &amp; EXPERIENCES
+          <span id="headerBrandText" class="font-sans text-sm sm:text-base md:text-lg font-semibold tracking-[0.24em] pl-[0.24em] text-[#EADBC8] leading-none uppercase group-hover:text-white transition-colors">A R B O R A</span>
+          <span class="font-sans text-[7.5px] sm:text-[8.5px] md:text-[9.5px] font-normal tracking-[0.16em] sm:tracking-[0.18em] pl-[0.16em] text-[#EADBC8]/80 leading-none uppercase mt-1 md:mt-1.5 flex items-center gap-1 whitespace-nowrap">
+            RETREATS &amp; EXPERIENCES
           </span>
         </div>
       </a>
 
-      <!-- DESKTOP NAV LINKS -->
-      <nav class="hidden lg:flex items-center gap-4 lg:gap-6 xl:gap-7 font-montserrat text-xs tracking-[0.15em] uppercase font-semibold my-auto whitespace-nowrap text-[#F1F5F2]">
-        <a href="#philosophy" class="hover:text-warmCream transition-colors">Philosophy</a>
-        <a href="#offers" class="text-sandstoneGold font-bold hover:text-white transition-colors">What We Offer</a>
-        <a href="#pillars" class="hover:text-warmCream transition-colors">The Arbora Way</a>
-        <a href="#community" class="hover:text-warmCream transition-colors">Arborans</a>
-        <a href="team" class="hover:text-warmCream transition-colors">Team</a>
-        <a href="cohorts" class="hover:text-warmCream transition-colors">Gatherings</a>
-        <a href="checkout" class="btn-shine-clean text-[11px] px-3.5 py-1.5 rounded-full font-bold">Checkout &rarr;</a>
+      <!-- DESKTOP NAV LINKS WITH BREATHING SPACE -->
+      <nav class="hidden lg:flex items-center gap-5 lg:gap-7 xl:gap-9 2xl:gap-11 font-montserrat text-[11px] xl:text-xs tracking-[0.18em] uppercase font-semibold my-auto whitespace-nowrap text-[#F1F5F2]">
+        <a href="#philosophy" class="hover:text-warmCream transition-colors py-1">Philosophy</a>
+        <a href="#offers" class="text-sandstoneGold font-bold hover:text-white transition-colors py-1">What We Offer</a>
+        <a href="#pillars" class="hover:text-warmCream transition-colors py-1">The Arbora Way</a>
+        <a href="#community" class="hover:text-warmCream transition-colors py-1">Arborans</a>
+        <a href="team" class="hover:text-warmCream transition-colors py-1">Team</a>
+        <a href="cohorts" class="hover:text-warmCream transition-colors py-1">Gatherings</a>
+        <a href="checkout" class="text-warmCream hover:text-white font-bold transition-colors py-1 flex items-center gap-1.5">
+          Checkout <span class="text-sandstoneGold">&rarr;</span>
+        </a>
       </nav>
 
-      <!-- CTA BUTTON -->
-      <div class="flex items-center gap-3 my-auto shrink-0">
-        <button onclick="openModal()" class="hidden sm:inline-flex btn-shine-clean font-montserrat text-xs tracking-widest uppercase font-bold px-5 py-2.5 rounded-full shrink-0 whitespace-nowrap">
+      <!-- CTA BUTTON GROUP -->
+      <div class="flex items-center gap-3 xl:gap-4 my-auto shrink-0 pl-3 xl:pl-6">
+        <button onclick="openModal()" class="hidden sm:inline-flex btn-shine-clean font-montserrat text-xs tracking-widest uppercase font-bold px-5 xl:px-6 py-2.5 rounded-full shrink-0 whitespace-nowrap shadow-lg">
           JOIN THE COMMUNITY &rarr;
         </button>
         
@@ -1015,7 +1017,7 @@ $mainHtmlContent = @"
       <div class="flex flex-col items-center justify-center text-center mb-4">
         <span class="font-sans text-xl md:text-2xl font-medium tracking-[0.28em] pl-[0.28em] text-[#EADBC8] uppercase">A R B O R A</span>
         <span class="font-sans text-xs md:text-sm font-normal tracking-[0.22em] pl-[0.22em] text-[#EADBC8]/90 uppercase mt-1 flex items-center justify-center gap-1.5">
-          <span class="opacity-60">-</span> COMMUNITY &amp; EXPERIENCES <span class="opacity-60">-</span>
+          <span class="opacity-60">-</span> RETREATS &amp; EXPERIENCES <span class="opacity-60">-</span>
         </span>
       </div>
 
