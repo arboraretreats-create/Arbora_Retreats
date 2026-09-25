@@ -206,9 +206,9 @@ $mainHtmlContent = @"
       <a href="#" class="flex items-center gap-2.5 sm:gap-3.5 shrink-0 group my-auto">
         <img id="headerLogo" src="$logoMarkUrl" alt="Arbora Icon Mark" class="h-9 sm:h-10 md:h-11 lg:h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105 my-auto self-center shrink-0" />
         
-        <div class="flex flex-col justify-center items-start my-auto">
-          <span id="headerBrandText" class="font-sans text-sm sm:text-base md:text-lg font-semibold tracking-[0.24em] pl-[0.24em] text-[#EADBC8] leading-none uppercase group-hover:text-white transition-colors">A R B O R A</span>
-          <span class="font-sans text-[8px] sm:text-[9px] md:text-[10px] font-medium tracking-[0.24em] pl-[0.24em] text-[#EADBC8]/80 leading-none uppercase mt-1 md:mt-1.5 flex items-center gap-1 whitespace-nowrap">
+        <div class="flex flex-col justify-center items-center text-center my-auto">
+          <span id="headerBrandText" class="font-sans text-sm sm:text-base md:text-lg font-semibold tracking-[0.24em] pl-[0.24em] text-[#EADBC8] leading-none uppercase group-hover:text-white transition-colors text-center">A R B O R A</span>
+          <span class="font-sans text-[8px] sm:text-[9px] md:text-[10px] font-medium tracking-[0.28em] pl-[0.28em] text-[#EADBC8]/80 leading-none uppercase mt-1 md:mt-1.5 flex items-center justify-center gap-1 whitespace-nowrap text-center">
             R E T R E A T S
           </span>
         </div>
