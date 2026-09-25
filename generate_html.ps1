@@ -208,8 +208,8 @@ $mainHtmlContent = @"
         
         <div class="flex flex-col justify-center items-start my-auto">
           <span id="headerBrandText" class="font-sans text-sm sm:text-base md:text-lg font-semibold tracking-[0.24em] pl-[0.24em] text-[#EADBC8] leading-none uppercase group-hover:text-white transition-colors">A R B O R A</span>
-          <span class="font-sans text-[7.5px] sm:text-[8.5px] md:text-[9.5px] font-normal tracking-[0.16em] sm:tracking-[0.18em] pl-[0.16em] text-[#EADBC8]/80 leading-none uppercase mt-1 md:mt-1.5 flex items-center gap-1 whitespace-nowrap">
-            RETREATS &amp; EXPERIENCES
+          <span class="font-sans text-[8px] sm:text-[9px] md:text-[10px] font-medium tracking-[0.24em] pl-[0.24em] text-[#EADBC8]/80 leading-none uppercase mt-1 md:mt-1.5 flex items-center gap-1 whitespace-nowrap">
+            R E T R E A T S
           </span>
         </div>
       </a>
@@ -1016,8 +1016,8 @@ $mainHtmlContent = @"
       <img src="$logoMarkUrl" alt="Arbora Icon Mark" class="h-14 md:h-16 w-auto mb-4 object-contain self-center mx-auto" />
       <div class="flex flex-col items-center justify-center text-center mb-4">
         <span class="font-sans text-xl md:text-2xl font-medium tracking-[0.28em] pl-[0.28em] text-[#EADBC8] uppercase">A R B O R A</span>
-        <span class="font-sans text-xs md:text-sm font-normal tracking-[0.22em] pl-[0.22em] text-[#EADBC8]/90 uppercase mt-1 flex items-center justify-center gap-1.5">
-          <span class="opacity-60">-</span> RETREATS &amp; EXPERIENCES <span class="opacity-60">-</span>
+        <span class="font-sans text-xs md:text-sm font-normal tracking-[0.24em] pl-[0.24em] text-[#EADBC8]/90 uppercase mt-1 flex items-center justify-center gap-1.5">
+          <span class="opacity-60">-</span> R E T R E A T S <span class="opacity-60">-</span>
         </span>
       </div>
 
