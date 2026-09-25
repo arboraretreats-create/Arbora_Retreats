@@ -57,15 +57,15 @@
       transition: all 250ms ease-in-out;
       cursor: pointer;
     }
-    .pkg-card.selected-maroon {
-      border-color: #A33852 !important;
-      background: linear-gradient(145deg, #1C0B12 0%, #12241C 100%) !important;
-      box-shadow: 0 0 25px rgba(163, 56, 82, 0.3);
+    .pkg-card.selected-private {
+      border-color: #C5A880 !important;
+      background: linear-gradient(145deg, rgba(197, 168, 128, 0.12) 0%, #12241C 100%) !important;
+      box-shadow: 0 0 25px rgba(197, 168, 128, 0.25);
     }
-    .pkg-card.selected-blue {
-      border-color: #2563EB !important;
-      background: linear-gradient(145deg, #091929 0%, #12241C 100%) !important;
-      box-shadow: 0 0 25px rgba(37, 99, 235, 0.3);
+    .pkg-card.selected-dorm {
+      border-color: #D8C4B6 !important;
+      background: linear-gradient(145deg, rgba(216, 196, 182, 0.12) 0%, #12241C 100%) !important;
+      box-shadow: 0 0 25px rgba(216, 196, 182, 0.25);
     }
   </style>
 </head>
@@ -85,7 +85,7 @@
       <div class="flex items-center gap-4">
         <a href="/" class="font-montserrat text-xs uppercase tracking-widest text-mutedSage hover:text-warmCream transition-colors hidden sm:inline-block">&larr; Back to Home</a>
         <a href="https://wa.me/918123817058" target="_blank" class="btn-shine-clean font-montserrat text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full flex items-center gap-2">
-          <span>💬 WhatsApp Help</span>
+          <span>WhatsApp Help</span>
         </a>
       </div>
     </div>
@@ -123,10 +123,10 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             
             <!-- PREMIUM PRIVATE ROOM -->
-            <div id="cardMaroon" onclick="selectPackage('private')" class="pkg-card selected-maroon p-6 rounded-2xl border-2 border-maroonBorder bg-maroonDeep/30 flex flex-col justify-between">
+            <div id="cardMaroon" onclick="selectPackage('private')" class="pkg-card selected-private p-6 rounded-2xl border-2 border-[#C5A880] bg-[#12241C] flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-3">
-                  <span class="bg-maroonBadge text-white font-montserrat text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                  <span class="bg-[#C5A880] text-[#0B1712] font-montserrat text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
                     PRIVATE ROOM
                   </span>
                   <span class="text-xs text-sandstoneGold font-semibold">6 Rooms Total</span>
@@ -144,7 +144,7 @@
                   <span class="font-heading text-3xl text-warmCream">&#8377;7,499</span>
                   <span class="font-sans text-xs text-mutedSage">INR / head</span>
                 </div>
-                <span class="font-sans text-[11px] text-[#A33852] font-semibold mt-1 block">&#10004; Private Room Access Included</span>
+                <span class="font-sans text-[11px] text-[#C5A880] font-semibold mt-1 block">&#10004; Private Room Access Included</span>
               </div>
             </div>
 
@@ -152,7 +152,7 @@
             <div id="cardBlue" onclick="selectPackage('dorm')" class="pkg-card p-6 rounded-2xl border border-white/15 bg-midPine flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-3">
-                  <span class="bg-blueBadge text-white font-montserrat text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                  <span class="bg-[#D8C4B6] text-[#0B1712] font-montserrat text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
                     COMMUNITY DORM
                   </span>
                   <span class="text-xs text-sandstoneGold font-semibold">9 Beds Total</span>
@@ -170,7 +170,7 @@
                   <span class="font-heading text-3xl text-warmCream">&#8377;6,999</span>
                   <span class="font-sans text-xs text-mutedSage">INR / head</span>
                 </div>
-                <span class="font-sans text-[11px] text-[#60A5FA] font-semibold mt-1 block">&#10004; Community Dorm Bed Included</span>
+                <span class="font-sans text-[11px] text-[#D8C4B6] font-semibold mt-1 block">&#10004; Community Dorm Bed Included</span>
               </div>
             </div>
 
@@ -345,10 +345,10 @@
       var cardBlue = document.getElementById('cardBlue');
 
       if (pkg === 'private') {
-        cardMaroon.className = 'pkg-card selected-maroon p-6 rounded-2xl border-2 border-maroonBorder bg-maroonDeep/30 flex flex-col justify-between';
+        cardMaroon.className = 'pkg-card selected-private p-6 rounded-2xl border-2 border-[#C5A880] bg-[#12241C] flex flex-col justify-between';
         cardBlue.className = 'pkg-card p-6 rounded-2xl border border-white/15 bg-midPine flex flex-col justify-between';
       } else {
-        cardBlue.className = 'pkg-card selected-blue p-6 rounded-2xl border-2 border-blueBorder bg-blueDeep/40 flex flex-col justify-between';
+        cardBlue.className = 'pkg-card selected-dorm p-6 rounded-2xl border-2 border-[#D8C4B6] bg-[#12241C] flex flex-col justify-between';
         cardMaroon.className = 'pkg-card p-6 rounded-2xl border border-white/15 bg-midPine flex flex-col justify-between';
       }
       updateSummary();

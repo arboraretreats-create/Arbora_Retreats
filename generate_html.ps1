@@ -685,8 +685,8 @@ $mainHtmlContent = @"
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
         
         <!-- PRIVATE ROOM PACKAGE -->
-        <div class="rounded-3xl bg-[#12241C] border-2 border-[#8B263E] p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-[#A33852] transition-all">
-          <div class="absolute top-0 right-0 bg-[#A33852] text-white font-montserrat text-[10px] font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-bl-2xl">
+        <div class="rounded-3xl bg-[#12241C] border-2 border-[#C5A880]/60 p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-[#C5A880] transition-all">
+          <div class="absolute top-0 right-0 bg-[#C5A880] text-[#0B1712] font-montserrat text-[10px] font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-bl-2xl">
             PRIVATE ROOMS &bull; 6 AVAILABLE
           </div>
 
@@ -704,10 +704,10 @@ $mainHtmlContent = @"
 
             <!-- KEY FEATURES -->
             <ul class="space-y-2.5 font-sans text-xs text-crispLinen mb-8 border-t border-white/10 pt-6">
-              <li class="flex items-center gap-2.5"><span class="text-[#A33852] font-bold">&#10004;</span> <span>Private Room with Ensuite Bathroom (6 Rooms Available)</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#A33852] font-bold">&#10004;</span> <span>All 11 Inclusions Covered (Meals, Transport, Trek, Campfire)</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#A33852] font-bold">&#10004;</span> <span>Roundtrip Travel from Bengaluru &amp; Tollgate Taxes Included</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#A33852] font-bold">&#10004;</span> <span>Welcome Artisanal Chocolates &amp; Takeaway Gift</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#C5A880] font-bold">&#10004;</span> <span>Private Room with Ensuite Bathroom (6 Rooms Available)</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#C5A880] font-bold">&#10004;</span> <span>All 11 Inclusions Covered (Meals, Transport, Trek, Campfire)</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#C5A880] font-bold">&#10004;</span> <span>Roundtrip Travel from Bengaluru &amp; Tollgate Taxes Included</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#C5A880] font-bold">&#10004;</span> <span>Welcome Artisanal Chocolates &amp; Takeaway Gift</span></li>
             </ul>
           </div>
 
@@ -717,13 +717,13 @@ $mainHtmlContent = @"
         </div>
 
         <!-- COMMUNITY DORMITORY PACKAGE -->
-        <div class="rounded-3xl bg-[#12241C] border-2 border-[#1E40AF] p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-[#2563EB] transition-all">
-          <div class="absolute top-0 right-0 bg-[#2563EB] text-white font-montserrat text-[10px] font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-bl-2xl">
+        <div class="rounded-3xl bg-[#12241C] border-2 border-[#D8C4B6]/50 p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-[#D8C4B6] transition-all">
+          <div class="absolute top-0 right-0 bg-[#D8C4B6] text-[#0B1712] font-montserrat text-[10px] font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-bl-2xl">
             COMMUNITY DORM &bull; 9 BEDS AVAILABLE
           </div>
 
           <div>
-            <span class="font-montserrat text-xs text-[#C5A880] font-bold uppercase tracking-widest block mb-2">COMMUNITY DORM STAY</span>
+            <span class="font-montserrat text-xs text-[#D8C4B6] font-bold uppercase tracking-widest block mb-2">COMMUNITY DORM STAY</span>
             <h3 class="font-heading text-3xl md:text-4xl uppercase tracking-wider text-warmCream mb-3">COMMUNITY DORMITORY BED</h3>
             <p class="font-sans text-xs md:text-sm text-mutedSage leading-relaxed mb-6">
               Spacious estate dormitory bed designed for friends and solo travelers wanting to stay at the heart of the community vibe.
@@ -736,14 +736,14 @@ $mainHtmlContent = @"
 
             <!-- KEY FEATURES -->
             <ul class="space-y-2.5 font-sans text-xs text-crispLinen mb-8 border-t border-white/10 pt-6">
-              <li class="flex items-center gap-2.5"><span class="text-[#60A5FA] font-bold">&#10004;</span> <span>Single Dormitory Bed Access (9 Beds Available)</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#60A5FA] font-bold">&#10004;</span> <span>All 11 Inclusions Covered (Meals, Transport, Trek, Campfire)</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#60A5FA] font-bold">&#10004;</span> <span>Roundtrip Travel from Bengaluru &amp; Tollgate Taxes Included</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#60A5FA] font-bold">&#10004;</span> <span>Welcome Artisanal Chocolates &amp; Takeaway Gift</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#D8C4B6] font-bold">&#10004;</span> <span>Single Dormitory Bed Access (9 Beds Available)</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#D8C4B6] font-bold">&#10004;</span> <span>All 11 Inclusions Covered (Meals, Transport, Trek, Campfire)</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#D8C4B6] font-bold">&#10004;</span> <span>Roundtrip Travel from Bengaluru &amp; Tollgate Taxes Included</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#D8C4B6] font-bold">&#10004;</span> <span>Welcome Artisanal Chocolates &amp; Takeaway Gift</span></li>
             </ul>
           </div>
 
-          <a href="checkout?package=dorm" class="w-full bg-[#1E40AF] hover:bg-[#2563EB] text-white font-montserrat py-4 rounded-2xl font-bold text-xs uppercase tracking-widest text-center shadow-lg transition-colors">
+          <a href="checkout?package=dorm" class="w-full btn-shine-clean font-montserrat py-4 rounded-2xl font-bold text-xs uppercase tracking-widest text-center shadow-lg">
             BOOK DORM BED &rarr;
           </a>
         </div>
