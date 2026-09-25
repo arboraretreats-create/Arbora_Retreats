@@ -122,12 +122,12 @@
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             
-            <!-- MAROON CHART: PREMIUM PRIVATE ROOM -->
+            <!-- PREMIUM PRIVATE ROOM -->
             <div id="cardMaroon" onclick="selectPackage('private')" class="pkg-card selected-maroon p-6 rounded-2xl border-2 border-maroonBorder bg-maroonDeep/30 flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-3">
                   <span class="bg-maroonBadge text-white font-montserrat text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
-                    MAROON CHART
+                    PRIVATE ROOM
                   </span>
                   <span class="text-xs text-sandstoneGold font-semibold">6 Rooms Total</span>
                 </div>
@@ -141,19 +141,19 @@
 
               <div class="pt-4 border-t border-white/10">
                 <div class="flex items-baseline gap-1">
-                  <span class="font-heading text-3xl text-warmCream">₹7,499</span>
+                  <span class="font-heading text-3xl text-warmCream">&#8377;7,499</span>
                   <span class="font-sans text-xs text-mutedSage">INR / head</span>
                 </div>
                 <span class="font-sans text-[11px] text-[#A33852] font-semibold mt-1 block">&#10004; Private Room Access Included</span>
               </div>
             </div>
 
-            <!-- BLUE CHART: COMMUNITY DORMITORY BED -->
+            <!-- COMMUNITY DORMITORY BED -->
             <div id="cardBlue" onclick="selectPackage('dorm')" class="pkg-card p-6 rounded-2xl border border-white/15 bg-midPine flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-3">
                   <span class="bg-blueBadge text-white font-montserrat text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
-                    BLUE CHART
+                    COMMUNITY DORM
                   </span>
                   <span class="text-xs text-sandstoneGold font-semibold">9 Beds Total</span>
                 </div>
@@ -167,7 +167,7 @@
 
               <div class="pt-4 border-t border-white/10">
                 <div class="flex items-baseline gap-1">
-                  <span class="font-heading text-3xl text-warmCream">₹6,999</span>
+                  <span class="font-heading text-3xl text-warmCream">&#8377;6,999</span>
                   <span class="font-sans text-xs text-mutedSage">INR / head</span>
                 </div>
                 <span class="font-sans text-[11px] text-[#60A5FA] font-semibold mt-1 block">&#10004; Community Dorm Bed Included</span>
@@ -292,7 +292,7 @@
             </div>
             <div class="flex justify-between font-sans text-xs text-mutedSage">
               <span>Rate per Head:</span>
-              <strong id="summaryRate" class="text-crispLinen">₹7,499 INR</strong>
+              <strong id="summaryRate" class="text-crispLinen">&#8377;7,499 INR</strong>
             </div>
             <div class="flex justify-between font-sans text-xs text-mutedSage">
               <span>Guests Count:</span>
@@ -300,18 +300,18 @@
             </div>
             <div class="pt-3 border-t border-white/10 flex justify-between items-baseline">
               <span class="font-montserrat text-xs uppercase tracking-wider font-bold text-sandstoneGold">Total Payable:</span>
-              <span id="summaryTotal" class="font-heading text-3xl text-warmCream">₹7,499 INR</span>
+              <span id="summaryTotal" class="font-heading text-3xl text-warmCream">&#8377;7,499 INR</span>
             </div>
           </div>
 
           <!-- ACTION BUTTONS -->
           <div class="space-y-3 pt-3">
             <button type="submit" class="w-full btn-shine-clean font-montserrat py-3.5 rounded-xl text-xs uppercase font-bold tracking-widest flex items-center justify-center gap-2">
-              <span>💬 Confirm Booking on WhatsApp &rarr;</span>
+              <span>Confirm Booking on WhatsApp &rarr;</span>
             </button>
 
             <button type="button" onclick="handleEmailBooking()" class="w-full bg-white/10 hover:bg-white/15 text-warmCream border border-white/20 font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest transition-colors flex items-center justify-center gap-2">
-              <span>✉️ Send Email Booking Request</span>
+              <span>Send Email Booking Request</span>
             </button>
           </div>
 
@@ -337,7 +337,7 @@
   <script>
     var currentPkg = 'private';
     var rates = { 'private': 7499, 'dorm': 6999 };
-    var names = { 'private': 'Premium Private Room (Maroon Chart)', 'dorm': 'Community Dormitory Bed (Blue Chart)' };
+    var names = { 'private': 'Premium Private Room', 'dorm': 'Community Dormitory Bed' };
 
     function selectPackage(pkg) {
       currentPkg = pkg;
