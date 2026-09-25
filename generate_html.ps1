@@ -215,13 +215,14 @@ $mainHtmlContent = @"
       </a>
 
       <!-- DESKTOP NAV LINKS -->
-      <nav class="hidden lg:flex items-center gap-5 lg:gap-7 xl:gap-9 font-montserrat text-xs tracking-[0.15em] uppercase font-semibold my-auto whitespace-nowrap text-[#F1F5F2]">
+      <nav class="hidden lg:flex items-center gap-4 lg:gap-6 xl:gap-7 font-montserrat text-xs tracking-[0.15em] uppercase font-semibold my-auto whitespace-nowrap text-[#F1F5F2]">
         <a href="#philosophy" class="hover:text-warmCream transition-colors">Philosophy</a>
+        <a href="#offers" class="text-sandstoneGold font-bold hover:text-white transition-colors">What We Offer</a>
         <a href="#pillars" class="hover:text-warmCream transition-colors">The Arbora Way</a>
         <a href="#community" class="hover:text-warmCream transition-colors">Arborans</a>
         <a href="team" class="hover:text-warmCream transition-colors">Team</a>
-        <a href="cohorts" class="text-sandstoneGold font-bold hover:text-white transition-colors">Gatherings &rarr;</a>
-        <a href="#why-we-exist" class="hover:text-warmCream transition-colors">Why We Exist</a>
+        <a href="cohorts" class="hover:text-warmCream transition-colors">Gatherings</a>
+        <a href="checkout" class="btn-shine-clean text-[11px] px-3.5 py-1.5 rounded-full font-bold">Checkout &rarr;</a>
       </nav>
 
       <!-- CTA BUTTON -->
@@ -241,12 +242,13 @@ $mainHtmlContent = @"
     <div id="mobileDropdown" class="hidden lg:hidden bg-deepCanopy border-b border-white/15 px-6 py-6 flex flex-col gap-4 shadow-2xl">
       <nav class="flex flex-col gap-3 font-montserrat text-xs tracking-widest uppercase font-semibold">
         <a href="#philosophy" onclick="toggleMobileMenu()" class="text-crispLinen/90 hover:text-warmCream py-2 border-b border-white/5 flex justify-between"><span>Philosophy</span> <span>&rarr;</span></a>
+        <a href="#offers" onclick="toggleMobileMenu()" class="text-sandstoneGold font-bold py-2 border-b border-white/5 flex justify-between"><span>What We Offer &amp; Rates</span> <span>&rarr;</span></a>
         <a href="#pillars" onclick="toggleMobileMenu()" class="text-crispLinen/90 hover:text-warmCream py-2 border-b border-white/5 flex justify-between"><span>The Arbora Way</span> <span>&rarr;</span></a>
         <a href="#community" onclick="toggleMobileMenu()" class="text-crispLinen/90 hover:text-warmCream py-2 border-b border-white/5 flex justify-between"><span>Meet the Arborans</span> <span>&rarr;</span></a>
         <a href="#next-experience" onclick="toggleMobileMenu()" class="text-crispLinen/90 hover:text-warmCream py-2 border-b border-white/5 flex justify-between"><span>Next Gathering</span> <span>&rarr;</span></a>
-        <a href="#after-arbora" onclick="toggleMobileMenu()" class="text-crispLinen/90 hover:text-warmCream py-2 border-b border-white/5 flex justify-between"><span>After Arbora</span> <span>&rarr;</span></a>
-        <a href="cohorts" class="text-sandstoneGold py-2 border-b border-white/5 flex justify-between"><span>30-Experience Directory</span> <span>&rarr;</span></a>
-        <a href="#why-we-exist" onclick="toggleMobileMenu()" class="text-crispLinen/90 hover:text-warmCream py-2 border-b border-white/5 flex justify-between"><span>Why Arbora Exists</span> <span>&rarr;</span></a>
+        <a href="cohorts" class="text-crispLinen/90 py-2 border-b border-white/5 flex justify-between"><span>30-Experience Directory</span> <span>&rarr;</span></a>
+        <a href="team" class="text-crispLinen/90 py-2 border-b border-white/5 flex justify-between"><span>Team</span> <span>&rarr;</span></a>
+        <a href="checkout" class="text-warmCream font-bold py-2 border-b border-white/5 flex justify-between"><span>Book Trip / Checkout</span> <span>&rarr;</span></a>
       </nav>
       <button onclick="toggleMobileMenu(); openModal();" class="w-full btn-shine-clean font-montserrat text-xs tracking-widest uppercase font-bold py-3.5 rounded-full text-center mt-2">
         JOIN THE COMMUNITY &rarr;
@@ -663,6 +665,114 @@ $mainHtmlContent = @"
     </div>
   </section>
 
+  <!-- WHAT WE OFFER & PACKAGE RATES -->
+  <section id="offers" class="py-24 px-6 bg-[#0B1712] text-crispLinen border-t border-white/10 scroll-mt-16">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <span class="badge-gold font-montserrat text-xs uppercase tracking-widest font-bold px-4 py-1.5 rounded-full inline-block mb-3">
+          PACKAGES &amp; PRICING
+        </span>
+        <h2 class="font-heading text-4xl md:text-6xl uppercase tracking-wider text-crispLinen mb-4">
+          WHAT WE OFFER
+        </h2>
+        <p class="font-sans text-mutedSage text-sm md:text-base leading-relaxed">
+          Choose your accommodation experience at Sura Stays Mudigere. Both packages include our complete 11-item all-inclusive itinerary, transport, meals, campfire, and activities.
+        </p>
+      </div>
+
+      <!-- CARDS GRID -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+        
+        <!-- MAROON CHART: PREMIUM PRIVATE ROOM -->
+        <div class="rounded-3xl bg-[#12241C] border-2 border-[#8B263E] p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-[#A33852] transition-all">
+          <div class="absolute top-0 right-0 bg-[#A33852] text-white font-montserrat text-[10px] font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-bl-2xl">
+            MAROON CHART &bull; 6 ROOMS
+          </div>
+
+          <div>
+            <span class="font-montserrat text-xs text-[#C5A880] font-bold uppercase tracking-widest block mb-2">PREMIUM PRIVATE STAY</span>
+            <h3 class="font-heading text-3xl md:text-4xl uppercase tracking-wider text-warmCream mb-3">PREMIUM PRIVATE ROOM</h3>
+            <p class="font-sans text-xs md:text-sm text-mutedSage leading-relaxed mb-6">
+              Exclusive private rooms with ensuite bathroom for couples or individuals who value personal space alongside community events.
+            </p>
+
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="font-heading text-4xl text-warmCream">₹7,499</span>
+              <span class="font-sans text-xs text-mutedSage">INR / head</span>
+            </div>
+
+            <!-- KEY FEATURES -->
+            <ul class="space-y-2.5 font-sans text-xs text-crispLinen mb-8 border-t border-white/10 pt-6">
+              <li class="flex items-center gap-2.5"><span class="text-[#A33852] font-bold">&#10004;</span> <span>Private Room with Ensuite Bathroom (6 Rooms Available)</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#A33852] font-bold">&#10004;</span> <span>All 11 Inclusions Covered (Meals, Transport, Trek, Campfire)</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#A33852] font-bold">&#10004;</span> <span>Roundtrip Travel from Bengaluru &amp; Tollgate Taxes Included</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#A33852] font-bold">&#10004;</span> <span>Welcome Artisanal Chocolates &amp; Takeaway Gift</span></li>
+            </ul>
+          </div>
+
+          <a href="checkout?package=private" class="w-full btn-shine-clean font-montserrat py-4 rounded-2xl font-bold text-xs uppercase tracking-widest text-center shadow-lg">
+            BOOK PRIVATE ROOM &rarr;
+          </a>
+        </div>
+
+        <!-- BLUE CHART: COMMUNITY DORMITORY BED -->
+        <div class="rounded-3xl bg-[#12241C] border-2 border-[#1E40AF] p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-[#2563EB] transition-all">
+          <div class="absolute top-0 right-0 bg-[#2563EB] text-white font-montserrat text-[10px] font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-bl-2xl">
+            BLUE CHART &bull; 9 BEDS
+          </div>
+
+          <div>
+            <span class="font-montserrat text-xs text-[#C5A880] font-bold uppercase tracking-widest block mb-2">COMMUNITY DORM STAY</span>
+            <h3 class="font-heading text-3xl md:text-4xl uppercase tracking-wider text-warmCream mb-3">COMMUNITY DORMITORY BED</h3>
+            <p class="font-sans text-xs md:text-sm text-mutedSage leading-relaxed mb-6">
+              Spacious estate dormitory bed designed for friends and solo travelers wanting to stay at the heart of the community vibe.
+            </p>
+
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="font-heading text-4xl text-warmCream">₹6,999</span>
+              <span class="font-sans text-xs text-mutedSage">INR / head</span>
+            </div>
+
+            <!-- KEY FEATURES -->
+            <ul class="space-y-2.5 font-sans text-xs text-crispLinen mb-8 border-t border-white/10 pt-6">
+              <li class="flex items-center gap-2.5"><span class="text-[#60A5FA] font-bold">&#10004;</span> <span>Single Dormitory Bed Access (9 Beds Available)</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#60A5FA] font-bold">&#10004;</span> <span>All 11 Inclusions Covered (Meals, Transport, Trek, Campfire)</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#60A5FA] font-bold">&#10004;</span> <span>Roundtrip Travel from Bengaluru &amp; Tollgate Taxes Included</span></li>
+              <li class="flex items-center gap-2.5"><span class="text-[#60A5FA] font-bold">&#10004;</span> <span>Welcome Artisanal Chocolates &amp; Takeaway Gift</span></li>
+            </ul>
+          </div>
+
+          <a href="checkout?package=dorm" class="w-full bg-[#1E40AF] hover:bg-[#2563EB] text-white font-montserrat py-4 rounded-2xl font-bold text-xs uppercase tracking-widest text-center shadow-lg transition-colors">
+            BOOK DORM BED &rarr;
+          </a>
+        </div>
+
+      </div>
+
+      <!-- INCLUSIONS SUMMARY BANNER -->
+      <div class="p-8 rounded-3xl bg-[#12241C] border border-white/15 max-w-5xl mx-auto">
+        <h4 class="font-montserrat text-base font-bold text-warmCream text-center mb-6 uppercase tracking-wider">
+          All-Inclusive Experience &bull; Every Package Includes:
+        </h4>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center font-sans text-xs text-mutedSage">
+          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">🏡 1. Stay</span><span>Sura Stays Estate</span></div>
+          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">🚌 2. Transport</span><span>Roundtrip Travel</span></div>
+          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">🍳 3. Breakfast</span><span>Estate Breakfast</span></div>
+          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">🍛 4. Lunch</span><span>South Canara Feast</span></div>
+          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">☕ 5. Tea &amp; Snacks</span><span>Evening Coffee &amp; Snacks</span></div>
+          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">🍲 6. Dinner</span><span>Long-Table Dinner</span></div>
+          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">💧 7. Water</span><span>Purified Water</span></div>
+          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">🔥 8. Campfire</span><span>Acoustic Session</span></div>
+          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">🏔️ 9. Activities</span><span>Peak Trek &amp; Streams</span></div>
+          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">🍫 10. Chocolates</span><span>Welcome Treats</span></div>
+          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5 col-span-2 sm:col-span-2"><span class="text-sandstoneGold font-bold block mb-1">🌟 11. Staff &amp; Taxes</span><span>Hosts, Media &amp; Tolls</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- 06 — EVERY ARBORA EXPERIENCE HAS -->
   <section id="inclusions" class="py-24 px-6 bg-[#D8E3DB] text-[#0A2116]">
     <div class="max-w-7xl mx-auto text-center">
@@ -860,7 +970,7 @@ $mainHtmlContent = @"
             We set out to build something radically different — a community brand centered on experiences that partners directly with premium estate owners like Sura Stays in Mudigere. By introducing The Arbora Way and our 30-Experience Directory, Arbora creates unscripted stories shared with kindred souls.
           </p>
           <p>
-            Supported by Chukki Talkies as our strategic media and investment partner, Arbora is scaling across Chikmagalur, Coorg, Gokarna, and the Western Ghats.
+            Arbora is scaling across Chikmagalur, Coorg, Gokarna, and the Western Ghats with strategic estate partners and community backing.
           </p>
         </div>
 

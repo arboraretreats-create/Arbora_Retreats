@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
         source: "/team",
         destination: "/team.html",
       },
+      {
+        source: "/checkout",
+        destination: "/checkout.html",
+      },
     ];
   },
 };

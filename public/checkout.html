@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Checkout & Booking | Arbora Retreats</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            deepCanopy: '#0B1712',
+            midPine: '#12241C',
+            warmCream: '#EADBC8',
+            softOat: '#D8C4B6',
+            silkIvory: '#F4F0EA',
+            sandstoneGold: '#C5A880',
+            mutedForest: '#3D5A45',
+            maroonDeep: '#4A1521',
+            maroonBorder: '#8B263E',
+            maroonBadge: '#A33852',
+            blueDeep: '#0F2537',
+            blueBorder: '#1E40AF',
+            blueBadge: '#2563EB',
+            mutedSage: '#A3B8AD',
+            crispLinen: '#F1F5F2'
+          },
+          fontFamily: {
+            heading: ['Anton', 'sans-serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    * { -webkit-tap-highlight-color: transparent !important; }
+    body { background-color: #0B1712; color: #F1F5F2; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+    .glass-nav { background: rgba(11, 23, 18, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+    .btn-shine-clean {
+      background-color: #EADBC8 !important;
+      color: #0B1712 !important;
+      transition: all 150ms ease-out !important;
+      cursor: pointer;
+    }
+    .btn-shine-clean:hover { background-color: #FFFFFF !important; transform: translateY(-1px); }
+    
+    .pkg-card {
+      transition: all 250ms ease-in-out;
+      cursor: pointer;
+    }
+    .pkg-card.selected-maroon {
+      border-color: #A33852 !important;
+      background: linear-gradient(145deg, #1C0B12 0%, #12241C 100%) !important;
+      box-shadow: 0 0 25px rgba(163, 56, 82, 0.3);
+    }
+    .pkg-card.selected-blue {
+      border-color: #2563EB !important;
+      background: linear-gradient(145deg, #091929 0%, #12241C 100%) !important;
+      box-shadow: 0 0 25px rgba(37, 99, 235, 0.3);
+    }
+  </style>
+</head>
+<body class="selection:bg-warmCream selection:text-deepCanopy min-h-screen flex flex-col justify-between">
+
+  <!-- TOP HEADER -->
+  <header class="sticky top-0 z-50 glass-nav py-3.5">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center h-14">
+      <a href="/" class="flex items-center gap-3 group">
+        <img src="/images/pure-arch-tree-mark.png" alt="Arbora Icon" class="h-9 w-auto object-contain group-hover:scale-105 transition-transform" />
+        <div class="flex flex-col">
+          <span class="font-sans text-base font-medium tracking-[0.24em] text-[#EADBC8] uppercase">A R B O R A</span>
+          <span class="font-sans text-[8px] tracking-[0.16em] text-[#EADBC8]/80 uppercase">RETREATS &bull; CHECKOUT</span>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-4">
+        <a href="/" class="font-montserrat text-xs uppercase tracking-widest text-mutedSage hover:text-warmCream transition-colors hidden sm:inline-block">&larr; Back to Home</a>
+        <a href="https://wa.me/918123817058" target="_blank" class="btn-shine-clean font-montserrat text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full flex items-center gap-2">
+          <span>💬 WhatsApp Help</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CHECKOUT SECTION -->
+  <main class="flex-1 py-12 px-4 md:px-8 max-w-7xl mx-auto w-full">
+    
+    <!-- HEADER TITLE -->
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <span class="inline-block bg-[#1A3327] border border-[#C5A880]/40 text-[#C5A880] font-montserrat text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3">
+        OFFICIAL ARBORA EXPERIENCE PACKAGES
+      </span>
+      <h1 class="font-heading text-4xl md:text-6xl uppercase tracking-wider text-crispLinen mb-3">
+        SECURE YOUR RETREAT SPOT
+      </h1>
+      <p class="font-sans text-sm md:text-base text-mutedSage leading-relaxed">
+        Select your accommodation preference, customize guest count, and instantly confirm your booking via WhatsApp or Email.
+      </p>
+    </div>
+
+    <!-- MAIN GRID: LEFT (PACKAGE SELECTION & INCLUSIONS), RIGHT (SUMMARY & FORM) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- LEFT COLUMN: PACKAGES & INCLUSIONS (7 COLS) -->
+      <div class="lg:col-span-7 space-y-8">
+        
+        <!-- STEP 1: SELECT PACKAGE -->
+        <div class="bg-[#12241C] border border-white/10 rounded-3xl p-6 md:p-8">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="w-7 h-7 rounded-full bg-sandstoneGold text-deepCanopy font-montserrat text-xs font-bold flex items-center justify-center">1</span>
+            <h2 class="font-montserrat text-lg font-bold text-crispLinen uppercase tracking-wider">Choose Your Accommodation</h2>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            
+            <!-- MAROON CHART: PREMIUM PRIVATE ROOM -->
+            <div id="cardMaroon" onclick="selectPackage('private')" class="pkg-card selected-maroon p-6 rounded-2xl border-2 border-maroonBorder bg-maroonDeep/30 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="bg-maroonBadge text-white font-montserrat text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                    MAROON CHART
+                  </span>
+                  <span class="text-xs text-sandstoneGold font-semibold">6 Rooms Total</span>
+                </div>
+                <h3 class="font-heading text-2xl uppercase tracking-wide text-warmCream mb-1">
+                  PREMIUM PRIVATE ROOM
+                </h3>
+                <p class="font-sans text-xs text-mutedSage leading-relaxed mb-4">
+                  Private sanctuary with ensuite bathroom for couples or individuals seeking quiet comfort.
+                </p>
+              </div>
+
+              <div class="pt-4 border-t border-white/10">
+                <div class="flex items-baseline gap-1">
+                  <span class="font-heading text-3xl text-warmCream">₹7,499</span>
+                  <span class="font-sans text-xs text-mutedSage">INR / head</span>
+                </div>
+                <span class="font-sans text-[11px] text-[#A33852] font-semibold mt-1 block">&#10004; Private Room Access Included</span>
+              </div>
+            </div>
+
+            <!-- BLUE CHART: COMMUNITY DORMITORY BED -->
+            <div id="cardBlue" onclick="selectPackage('dorm')" class="pkg-card p-6 rounded-2xl border border-white/15 bg-midPine flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="bg-blueBadge text-white font-montserrat text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                    BLUE CHART
+                  </span>
+                  <span class="text-xs text-sandstoneGold font-semibold">9 Beds Total</span>
+                </div>
+                <h3 class="font-heading text-2xl uppercase tracking-wide text-warmCream mb-1">
+                  COMMUNITY DORMITORY BED
+                </h3>
+                <p class="font-sans text-xs text-mutedSage leading-relaxed mb-4">
+                  Spacious estate dormitory bed ideal for friend groups and solo travelers building community.
+                </p>
+              </div>
+
+              <div class="pt-4 border-t border-white/10">
+                <div class="flex items-baseline gap-1">
+                  <span class="font-heading text-3xl text-warmCream">₹6,999</span>
+                  <span class="font-sans text-xs text-mutedSage">INR / head</span>
+                </div>
+                <span class="font-sans text-[11px] text-[#60A5FA] font-semibold mt-1 block">&#10004; Community Dorm Bed Included</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- STEP 2: ALL 11 INCLUSIONS BREAKDOWN -->
+        <div class="bg-[#12241C] border border-white/10 rounded-3xl p-6 md:p-8">
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-full bg-sandstoneGold text-deepCanopy font-montserrat text-xs font-bold flex items-center justify-center">2</span>
+              <h2 class="font-montserrat text-lg font-bold text-crispLinen uppercase tracking-wider">What's Included (11 Items)</h2>
+            </div>
+            <span class="text-xs font-montserrat text-sandstoneGold uppercase tracking-widest font-bold">100% ALL-INCLUSIVE</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 font-sans text-xs text-crispLinen">
+            <div class="p-3.5 rounded-xl bg-deepCanopy/60 border border-white/5 flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#1A3327] text-sandstoneGold flex items-center justify-center font-bold shrink-0">✓</span>
+              <div><strong class="text-warmCream block">1. Stay Accommodation</strong><span>Sura Stays Mudigere Coffee Estate</span></div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-deepCanopy/60 border border-white/5 flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#1A3327] text-sandstoneGold flex items-center justify-center font-bold shrink-0">✓</span>
+              <div><strong class="text-warmCream block">2. Roundtrip Transport</strong><span>Comfortable group travel from Bengaluru</span></div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-deepCanopy/60 border border-white/5 flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#1A3327] text-sandstoneGold flex items-center justify-center font-bold shrink-0">✓</span>
+              <div><strong class="text-warmCream block">3. Authentic Breakfast</strong><span>Traditional estate morning feast</span></div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-deepCanopy/60 border border-white/5 flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#1A3327] text-sandstoneGold flex items-center justify-center font-bold shrink-0">✓</span>
+              <div><strong class="text-warmCream block">4. South Canara Lunch</strong><span>Regional buffet with local flavors</span></div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-deepCanopy/60 border border-white/5 flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#1A3327] text-sandstoneGold flex items-center justify-center font-bold shrink-0">✓</span>
+              <div><strong class="text-warmCream block">5. Evening Snacks & Tea</strong><span>Hot estate coffee/tea & local snacks</span></div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-deepCanopy/60 border border-white/5 flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#1A3327] text-sandstoneGold flex items-center justify-center font-bold shrink-0">✓</span>
+              <div><strong class="text-warmCream block">6. Communal Dinner</strong><span>Long-table campfire feast</span></div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-deepCanopy/60 border border-white/5 flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#1A3327] text-sandstoneGold flex items-center justify-center font-bold shrink-0">✓</span>
+              <div><strong class="text-warmCream block">7. Mineral Water</strong><span>Purified drinking water throughout</span></div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-deepCanopy/60 border border-white/5 flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#1A3327] text-sandstoneGold flex items-center justify-center font-bold shrink-0">✓</span>
+              <div><strong class="text-warmCream block">8. Acoustic Campfire</strong><span>Starlit fireside music circle</span></div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-deepCanopy/60 border border-white/5 flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#1A3327] text-sandstoneGold flex items-center justify-center font-bold shrink-0">✓</span>
+              <div><strong class="text-warmCream block">9. Peak Treks & Streams</strong><span>Guided nature activities & dips</span></div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-deepCanopy/60 border border-white/5 flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-[#1A3327] text-sandstoneGold flex items-center justify-center font-bold shrink-0">✓</span>
+              <div><strong class="text-warmCream block">10. Chocolates & Gifts</strong><span>Welcome artisanal chocolates & gifts</span></div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-deepCanopy/60 border border-white/5 flex items-center gap-3 sm:col-span-2">
+              <span class="w-6 h-6 rounded-full bg-[#1A3327] text-sandstoneGold flex items-center justify-center font-bold shrink-0">✓</span>
+              <div><strong class="text-warmCream block">11. Staff & Leader Support</strong><span>Dedicated Arbora hosts, marketing media & tollgate taxes covered</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: CALCULATOR & BOOKING FORM (5 COLS) -->
+      <div class="lg:col-span-5 bg-[#12241C] border-2 border-sandstoneGold/40 rounded-3xl p-6 md:p-8 shadow-2xl sticky top-24">
+        
+        <div class="flex items-center gap-3 mb-6">
+          <span class="w-7 h-7 rounded-full bg-sandstoneGold text-deepCanopy font-montserrat text-xs font-bold flex items-center justify-center">3</span>
+          <h2 class="font-montserrat text-lg font-bold text-crispLinen uppercase tracking-wider">Booking Details & Total</h2>
+        </div>
+
+        <!-- FORM -->
+        <form id="checkoutForm" onsubmit="handleCheckout(event)" class="space-y-4">
+          
+          <div>
+            <label class="block font-montserrat text-xs uppercase font-semibold text-mutedSage mb-1">Full Name *</label>
+            <input type="text" id="custName" required placeholder="Aditi Sharma" class="w-full bg-deepCanopy border border-white/15 rounded-xl px-4 py-2.5 font-sans text-sm text-crispLinen focus:outline-none focus:border-warmCream" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-montserrat text-xs uppercase font-semibold text-mutedSage mb-1">WhatsApp Phone *</label>
+              <input type="tel" id="custPhone" required placeholder="+91 81238 17058" class="w-full bg-deepCanopy border border-white/15 rounded-xl px-4 py-2.5 font-sans text-sm text-crispLinen focus:outline-none focus:border-warmCream" />
+            </div>
+            <div>
+              <label class="block font-montserrat text-xs uppercase font-semibold text-mutedSage mb-1">Email Address *</label>
+              <input type="email" id="custEmail" required placeholder="aditi@example.com" class="w-full bg-deepCanopy border border-white/15 rounded-xl px-4 py-2.5 font-sans text-sm text-crispLinen focus:outline-none focus:border-warmCream" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-montserrat text-xs uppercase font-semibold text-mutedSage mb-1">Number of Guests *</label>
+              <div class="flex items-center bg-deepCanopy border border-white/15 rounded-xl p-1">
+                <button type="button" onclick="adjustGuests(-1)" class="w-10 h-9 rounded-lg bg-white/5 hover:bg-white/10 text-white font-bold text-lg">&minus;</button>
+                <input type="number" id="guestCount" value="1" min="1" max="15" readonly class="w-full bg-transparent text-center font-heading text-xl text-warmCream focus:outline-none" />
+                <button type="button" onclick="adjustGuests(1)" class="w-10 h-9 rounded-lg bg-white/5 hover:bg-white/10 text-white font-bold text-lg">&plus;</button>
+              </div>
+            </div>
+            <div>
+              <label class="block font-montserrat text-xs uppercase font-semibold text-mutedSage mb-1">Preferred Date</label>
+              <input type="date" id="tripDate" class="w-full bg-deepCanopy border border-white/15 rounded-xl px-3 py-2 font-sans text-xs text-crispLinen focus:outline-none focus:border-warmCream" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-montserrat text-xs uppercase font-semibold text-mutedSage mb-1">Special Notes / Dietary Requests</label>
+            <textarea id="custNotes" rows="2" placeholder="e.g. Vegetarian food, solo traveler joining..." class="w-full bg-deepCanopy border border-white/15 rounded-xl px-4 py-2 font-sans text-xs text-crispLinen focus:outline-none focus:border-warmCream"></textarea>
+          </div>
+
+          <!-- PRICE SUMMARY BOX -->
+          <div class="p-5 rounded-2xl bg-deepCanopy border border-white/15 space-y-2 mt-6">
+            <div class="flex justify-between font-sans text-xs text-mutedSage">
+              <span>Selected Package:</span>
+              <strong id="summaryPkgName" class="text-warmCream font-montserrat">Premium Private Room</strong>
+            </div>
+            <div class="flex justify-between font-sans text-xs text-mutedSage">
+              <span>Rate per Head:</span>
+              <strong id="summaryRate" class="text-crispLinen">₹7,499 INR</strong>
+            </div>
+            <div class="flex justify-between font-sans text-xs text-mutedSage">
+              <span>Guests Count:</span>
+              <strong id="summaryGuests" class="text-crispLinen">1 Person</strong>
+            </div>
+            <div class="pt-3 border-t border-white/10 flex justify-between items-baseline">
+              <span class="font-montserrat text-xs uppercase tracking-wider font-bold text-sandstoneGold">Total Payable:</span>
+              <span id="summaryTotal" class="font-heading text-3xl text-warmCream">₹7,499 INR</span>
+            </div>
+          </div>
+
+          <!-- ACTION BUTTONS -->
+          <div class="space-y-3 pt-3">
+            <button type="submit" class="w-full btn-shine-clean font-montserrat py-3.5 rounded-xl text-xs uppercase font-bold tracking-widest flex items-center justify-center gap-2">
+              <span>💬 Confirm Booking on WhatsApp &rarr;</span>
+            </button>
+
+            <button type="button" onclick="handleEmailBooking()" class="w-full bg-white/10 hover:bg-white/15 text-warmCream border border-white/20 font-montserrat py-3 rounded-xl text-xs uppercase font-bold tracking-widest transition-colors flex items-center justify-center gap-2">
+              <span>✉️ Send Email Booking Request</span>
+            </button>
+          </div>
+
+          <div class="text-center pt-2">
+            <p class="font-sans text-[11px] text-mutedSage">
+              Direct Contact: <a href="mailto:arboraretreats@gmail.com" class="text-sandstoneGold underline">arboraretreats@gmail.com</a> | <a href="tel:8123817058" class="text-sandstoneGold underline">+91 81238 17058</a>
+            </p>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-8 bg-deepCanopy border-t border-white/10 text-center font-sans text-xs text-mutedSage">
+    <p>&copy; 2026 Arbora Experience Brand. All rights reserved. &bull; Mudigere, Karnataka</p>
+  </footer>
+
+  <script>
+    var currentPkg = 'private';
+    var rates = { 'private': 7499, 'dorm': 6999 };
+    var names = { 'private': 'Premium Private Room (Maroon Chart)', 'dorm': 'Community Dormitory Bed (Blue Chart)' };
+
+    function selectPackage(pkg) {
+      currentPkg = pkg;
+      var cardMaroon = document.getElementById('cardMaroon');
+      var cardBlue = document.getElementById('cardBlue');
+
+      if (pkg === 'private') {
+        cardMaroon.className = 'pkg-card selected-maroon p-6 rounded-2xl border-2 border-maroonBorder bg-maroonDeep/30 flex flex-col justify-between';
+        cardBlue.className = 'pkg-card p-6 rounded-2xl border border-white/15 bg-midPine flex flex-col justify-between';
+      } else {
+        cardBlue.className = 'pkg-card selected-blue p-6 rounded-2xl border-2 border-blueBorder bg-blueDeep/40 flex flex-col justify-between';
+        cardMaroon.className = 'pkg-card p-6 rounded-2xl border border-white/15 bg-midPine flex flex-col justify-between';
+      }
+      updateSummary();
+    }
+
+    function adjustGuests(delta) {
+      var input = document.getElementById('guestCount');
+      var val = parseInt(input.value) + delta;
+      if (val >= 1 && val <= 15) {
+        input.value = val;
+        updateSummary();
+      }
+    }
+
+    function updateSummary() {
+      var count = parseInt(document.getElementById('guestCount').value) || 1;
+      var rate = rates[currentPkg];
+      var total = rate * count;
+
+      document.getElementById('summaryPkgName').innerText = names[currentPkg];
+      document.getElementById('summaryRate').innerText = '₹' + rate.toLocaleString('en-IN') + ' INR';
+      document.getElementById('summaryGuests').innerText = count + (count === 1 ? ' Person' : ' Guests');
+      document.getElementById('summaryTotal').innerText = '₹' + total.toLocaleString('en-IN') + ' INR';
+    }
+
+    function handleCheckout(e) {
+      e.preventDefault();
+      var name = document.getElementById('custName').value;
+      var phone = document.getElementById('custPhone').value;
+      var email = document.getElementById('custEmail').value;
+      var count = document.getElementById('guestCount').value;
+      var date = document.getElementById('tripDate').value || 'Flexible';
+      var notes = document.getElementById('custNotes').value || 'None';
+      var total = (rates[currentPkg] * parseInt(count)).toLocaleString('en-IN');
+
+      var msg = "Hi Arbora Retreats Team! I want to book a trip package.\n\n" +
+                "📦 Package: " + names[currentPkg] + "\n" +
+                "👤 Name: " + name + "\n" +
+                "📱 Phone: " + phone + "\n" +
+                "✉️ Email: " + email + "\n" +
+                "👥 Guests: " + count + "\n" +
+                "📅 Date: " + date + "\n" +
+                "💰 Total Payable: ₹" + total + " INR\n" +
+                "📝 Notes: " + notes + "\n\n" +
+                "Please share the payment details and booking confirmation!";
+
+      var waUrl = "https://wa.me/918123817058?text=" + encodeURIComponent(msg);
+      window.open(waUrl, '_blank');
+    }
+
+    function handleEmailBooking() {
+      var name = document.getElementById('custName').value || 'Guest';
+      var phone = document.getElementById('custPhone').value || 'Not provided';
+      var email = document.getElementById('custEmail').value || 'Not provided';
+      var count = document.getElementById('guestCount').value || 1;
+      var date = document.getElementById('tripDate').value || 'Flexible';
+      var notes = document.getElementById('custNotes').value || 'None';
+      var total = (rates[currentPkg] * parseInt(count)).toLocaleString('en-IN');
+
+      var subject = "Booking Request: " + names[currentPkg] + " - " + name;
+      var body = "Package: " + names[currentPkg] + "\n" +
+                 "Full Name: " + name + "\n" +
+                 "Phone / WhatsApp: " + phone + "\n" +
+                 "Email: " + email + "\n" +
+                 "Guest Count: " + count + "\n" +
+                 "Preferred Date: " + date + "\n" +
+                 "Total Amount: ₹" + total + " INR\n" +
+                 "Notes: " + notes;
+
+      var gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=arboraretreats@gmail.com&su=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.open(gmailUrl, '_blank');
+    }
+
+    // Auto check URL query params (e.g. /checkout?package=dorm)
+    document.addEventListener("DOMContentLoaded", function() {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('package') === 'dorm') {
+        selectPackage('dorm');
+      }
+    });
+  </script>
+</body>
+</html>
