@@ -1019,7 +1019,7 @@ $mainHtmlContent = @"
         </span>
       </div>
       <p class="font-sans text-xs text-mutedSage mb-6">Arborans &bull; Karnataka, India &bull; 2026 &bull; Where People Find Their People.</p>
-      <p class="font-sans text-[11px] text-mutedSage/60">&copy; 2026 Arbora Experience Brand. All rights reserved.</p>
+      <p class="font-sans text-[11px] text-mutedSage/60">&copy; 2026 Arbora Experience Brand. All rights reserved. &bull; <a href="terms" class="underline text-sandstoneGold">Terms &amp; Conditions</a></p>
     </div>
   </footer>
 

@@ -304,6 +304,16 @@
             </div>
           </div>
 
+          <!-- TERMS & CONDITIONS AGREEMENT CHECKBOX -->
+          <div class="p-4 rounded-xl bg-deepCanopy border border-white/15 space-y-2 mt-4">
+            <label class="flex items-start gap-3 cursor-pointer select-none">
+              <input type="checkbox" id="termsCheck" required class="mt-1 w-4 h-4 accent-sandstoneGold rounded shrink-0" />
+              <span class="font-sans text-xs text-mutedSage leading-snug">
+                I have read, understood, and agreed to the <a href="terms" target="_blank" class="text-sandstoneGold font-semibold underline hover:text-white">Arbora Retreats Terms &amp; Conditions (15 Policy Sections)</a>.
+              </span>
+            </label>
+          </div>
+
           <!-- ACTION BUTTONS -->
           <div class="space-y-3 pt-3">
             <button type="submit" class="w-full btn-shine-clean font-montserrat py-3.5 rounded-xl text-xs uppercase font-bold tracking-widest flex items-center justify-center gap-2">
@@ -317,7 +327,7 @@
 
           <div class="text-center pt-2">
             <p class="font-sans text-[11px] text-mutedSage">
-              Direct Contact: <a href="mailto:arboraretreats@gmail.com" class="text-sandstoneGold underline">arboraretreats@gmail.com</a> | <a href="tel:8123817058" class="text-sandstoneGold underline">+91 81238 17058</a>
+              Direct Contact: <a href="mailto:support@arboraretreats.in" class="text-sandstoneGold underline">support@arboraretreats.in</a> | <a href="tel:8123817058" class="text-sandstoneGold underline">+91 81238 17058</a>
             </p>
           </div>
 
@@ -331,7 +341,7 @@
 
   <!-- FOOTER -->
   <footer class="py-8 bg-deepCanopy border-t border-white/10 text-center font-sans text-xs text-mutedSage">
-    <p>&copy; 2026 Arbora Experience Brand. All rights reserved. &bull; Mudigere, Karnataka</p>
+    <p>&copy; 2026 Arbora Experience Brand. All rights reserved. &bull; Mudigere, Karnataka &bull; <a href="terms" class="underline text-sandstoneGold">Terms &amp; Policies</a></p>
   </footer>
 
   <script>
@@ -376,6 +386,12 @@
 
     function handleCheckout(e) {
       e.preventDefault();
+      var check = document.getElementById('termsCheck');
+      if (!check || !check.checked) {
+        alert('Please review and agree to the Arbora Retreats Terms & Conditions before confirming your booking.');
+        return;
+      }
+
       var name = document.getElementById('custName').value;
       var phone = document.getElementById('custPhone').value;
       var email = document.getElementById('custEmail').value;
@@ -392,7 +408,8 @@
                 "👥 Guests: " + count + "\n" +
                 "📅 Date: " + date + "\n" +
                 "💰 Total Payable: ₹" + total + " INR\n" +
-                "📝 Notes: " + notes + "\n\n" +
+                "📝 Notes: " + notes + "\n" +
+                "📜 Terms Agreement: YES (Confirmed Arbora Terms & Conditions)\n\n" +
                 "Please share the payment details and booking confirmation!";
 
       var waUrl = "https://wa.me/918123817058?text=" + encodeURIComponent(msg);
@@ -400,6 +417,12 @@
     }
 
     function handleEmailBooking() {
+      var check = document.getElementById('termsCheck');
+      if (!check || !check.checked) {
+        alert('Please review and agree to the Arbora Retreats Terms & Conditions before sending your email request.');
+        return;
+      }
+
       var name = document.getElementById('custName').value || 'Guest';
       var phone = document.getElementById('custPhone').value || 'Not provided';
       var email = document.getElementById('custEmail').value || 'Not provided';
@@ -408,7 +431,7 @@
       var notes = document.getElementById('custNotes').value || 'None';
       var total = (rates[currentPkg] * parseInt(count)).toLocaleString('en-IN');
 
-      var subject = "Booking Request: " + names[currentPkg] + " - " + name;
+      var subject = "Booking Request & Terms Verification: " + names[currentPkg] + " - " + name;
       var body = "Package: " + names[currentPkg] + "\n" +
                  "Full Name: " + name + "\n" +
                  "Phone / WhatsApp: " + phone + "\n" +
@@ -416,9 +439,11 @@
                  "Guest Count: " + count + "\n" +
                  "Preferred Date: " + date + "\n" +
                  "Total Amount: ₹" + total + " INR\n" +
-                 "Notes: " + notes;
+                 "Notes: " + notes + "\n" +
+                 "Terms Agreement: Confirmed reading and acceptance of Arbora Retreats Terms & Conditions (15 Sections)\n\n" +
+                 "Sent via Arbora Checkout System.";
 
-      var gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=arboraretreats@gmail.com&su=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      var gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=support@arboraretreats.in,arboraretreats@gmail.com&su=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
       window.open(gmailUrl, '_blank');
     }
 

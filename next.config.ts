@@ -19,6 +19,14 @@ const nextConfig: NextConfig = {
         source: "/checkout",
         destination: "/checkout.html",
       },
+      {
+        source: "/terms",
+        destination: "/terms.html",
+      },
+      {
+        source: "/policies",
+        destination: "/terms.html",
+      },
     ];
   },
 };
