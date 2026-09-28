@@ -258,7 +258,7 @@ $mainHtmlContent = @"
     </div>
   </header>
 
-  <!-- 01 — HERO (STREAMED VIDEO FILES - ZERO BUNDLE OVERHEAD) -->
+  <!-- 01  -  HERO (STREAMED VIDEO FILES - ZERO BUNDLE OVERHEAD) -->
   <section id="heroSection" class="relative min-h-[88vh] flex items-center justify-center pt-32 pb-24 px-6 overflow-hidden bg-deepCanopy">
     <div class="absolute inset-0 z-0 w-full h-full overflow-hidden">
       <video id="heroVideoDesktop" autoplay muted loop playsinline class="hidden md:block w-full h-full object-cover scale-105">
@@ -292,7 +292,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 02 — PHILOSOPHY -->
+  <!-- 02  -  PHILOSOPHY -->
   <section id="philosophy" class="relative py-24 px-6 bg-gradient-to-b from-[#0B1712] via-deepCanopy to-[#12241C]">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-12 reveal-on-scroll">
@@ -322,13 +322,13 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 03 — COMMUNITY -->
+  <!-- 03  -  COMMUNITY -->
   <section id="community" class="py-24 px-6 bg-[#0B1712] text-crispLinen border-t border-white/10">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
         <span class="badge-gold font-montserrat text-xs uppercase tracking-widest font-bold px-4 py-1.5 rounded-full">REAL ATTENDEES &bull; REAL STORIES</span>
         <h2 class="font-heading text-4xl md:text-5xl uppercase tracking-wider text-crispLinen mt-4 mb-4">MEET THE ARBORANS</h2>
-        <p class="font-sans text-mutedSage text-base">Who belongs to Arbora? Real people — creators, dreamers, music lovers, solo travelers, and friend circles who come for the getaway and stay for the community.</p>
+        <p class="font-sans text-mutedSage text-base">Who belongs to Arbora? Real people - creators, dreamers, music lovers, solo travelers, and friend circles who come for the getaway and stay for the community.</p>
       </div>
 
       <!-- Community Grid -->
@@ -389,7 +389,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 04 — THE ARBORA WAY -->
+  <!-- 04  -  THE ARBORA WAY -->
   <section id="pillars" class="py-24 px-6 bg-[#0B1712] text-[#F1F5F2]">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
@@ -408,7 +408,7 @@ $mainHtmlContent = @"
         <div class="p-7 rounded-3xl bg-[#12241C] border border-white/10 hover:border-warmCream transition-all">
           <span class="font-heading text-xs uppercase tracking-widest text-sandstoneGold block mb-1">BELIEF 02 &bull; PEOPLE</span>
           <h3 class="font-montserrat text-xl font-bold text-crispLinen mb-2">Human Presence First</h3>
-          <p class="font-sans text-xs text-mutedSage leading-relaxed">People don't come for the resort — they come for who they share it with.</p>
+          <p class="font-sans text-xs text-mutedSage leading-relaxed">People don't come for the resort - they come for who they share it with.</p>
         </div>
         <div class="p-7 rounded-3xl bg-[#12241C] border border-white/10 hover:border-warmCream transition-all">
           <span class="font-heading text-xs uppercase tracking-widest text-sandstoneGold block mb-1">BELIEF 03 &bull; MUSIC</span>
@@ -448,7 +448,7 @@ $mainHtmlContent = @"
           <div class="snap-center shrink-0 w-[82vw] max-w-[300px] p-6 rounded-3xl bg-[#12241C] border border-white/15">
             <span class="font-heading text-xs uppercase tracking-widest text-sandstoneGold block mb-1">BELIEF 02 &bull; PEOPLE</span>
             <h3 class="font-montserrat text-xl font-bold text-crispLinen mb-2">Human Presence First</h3>
-            <p class="font-sans text-xs text-mutedSage leading-relaxed">People don't come for the resort — they come for the people.</p>
+            <p class="font-sans text-xs text-mutedSage leading-relaxed">People don't come for the resort - they come for the people.</p>
           </div>
           <div class="snap-center shrink-0 w-[82vw] max-w-[300px] p-6 rounded-3xl bg-[#12241C] border border-white/15">
             <span class="font-heading text-xs uppercase tracking-widest text-sandstoneGold block mb-1">BELIEF 03 &bull; MUSIC</span>
@@ -492,7 +492,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 05 — THE NEXT ARBORA & THIS TIME WE GATHER AT -->
+  <!-- 05  -  THE NEXT ARBORA & THIS TIME WE GATHER AT -->
   <section id="next-experience" class="py-24 px-6 bg-[#E8EFEA] text-[#0A1F14]">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
@@ -504,7 +504,7 @@ $mainHtmlContent = @"
         <div class="p-6 rounded-2xl bg-white border border-[#D1DDD5] max-w-xl mx-auto text-left shadow-lg">
           <span class="font-heading text-xs uppercase tracking-widest text-[#3D5A45] block mb-1">THIS TIME, WE GATHER AT</span>
           <h3 class="font-montserrat text-2xl font-bold text-[#0A1F14] mb-2">Sura Stays, Mudigere</h3>
-          <p class="font-sans text-xs text-[#2C3E33] leading-relaxed">A coffee-estate sanctuary that serves as our setting. Sura Stays is the backdrop — the people, music, and shared moments are the experience.</p>
+          <p class="font-sans text-xs text-[#2C3E33] leading-relaxed">A coffee-estate sanctuary that serves as our setting. Sura Stays is the backdrop - the people, music, and shared moments are the experience.</p>
         </div>
       </div>
 
@@ -775,7 +775,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 06 — EVERY ARBORA EXPERIENCE HAS -->
+  <!-- 06  -  EVERY ARBORA EXPERIENCE HAS -->
   <section id="inclusions" class="py-24 px-6 bg-[#D8E3DB] text-[#0A2116]">
     <div class="max-w-7xl mx-auto text-center">
       <span class="badge-oat font-montserrat text-xs uppercase tracking-widest font-semibold px-4 py-1.5 rounded-full inline-block mb-3 bg-white/60">Logistics Follow Culture</span>
@@ -834,7 +834,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 07 — FIND YOUR WAY INTO ARBORA -->
+  <!-- 07  -  FIND YOUR WAY INTO ARBORA -->
   <section id="experiences" class="py-20 px-6 bg-[#0B1712] text-crispLinen border-t border-b border-white/10">
     <div class="max-w-6xl mx-auto text-center">
       <span class="badge-oat font-montserrat text-xs uppercase tracking-widest font-semibold px-4 py-1.5 rounded-full inline-block mb-4">Community Formats</span>
@@ -877,7 +877,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 08 — WHAT HAPPENS AFTER YOUR FIRST ARBORA? -->
+  <!-- 08  -  WHAT HAPPENS AFTER YOUR FIRST ARBORA? -->
   <section id="after-arbora" class="py-24 px-6 bg-[#0D1C13] text-crispLinen border-b border-white/10">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -941,7 +941,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-    <!-- 09 — WHY ARBORA EXISTS & OUR COMMUNITY STORY -->
+    <!-- 09  -  WHY ARBORA EXISTS & OUR COMMUNITY STORY -->
   <section id="why-we-exist" class="py-24 px-6 bg-warmSage text-charcoalGreen scroll-mt-16">
     <div class="max-w-7xl mx-auto">
       
@@ -969,7 +969,7 @@ $mainHtmlContent = @"
             Arbora was founded in 2026 out of a simple observation: conventional travel platforms treat accommodation as a transactional line item. Guests book rooms, check in, stay isolated, and check out without ever experiencing true human connection or regional immersion.
           </p>
           <p>
-            We set out to build something radically different — a community brand centered on experiences that partners directly with premium estate owners like Sura Stays in Mudigere. By introducing The Arbora Way and our 30-Experience Directory, Arbora creates unscripted stories shared with kindred souls.
+            We set out to build something radically different - a community brand centered on experiences that partners directly with premium estate owners like Sura Stays in Mudigere. By introducing The Arbora Way and our 30-Experience Directory, Arbora creates unscripted stories shared with kindred souls.
           </p>
           <p>
             Arbora is scaling across Chikmagalur, Coorg, Gokarna, and the Western Ghats with strategic estate partners and community backing.
@@ -991,7 +991,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 10 — COMMUNITY MEMBERSHIP CTA -->
+  <!-- 10  -  COMMUNITY MEMBERSHIP CTA -->
   <section class="py-24 px-6 bg-[#0B1712] text-crispLinen text-center border-t border-white/10 relative overflow-hidden">
     <div class="max-w-6xl mx-auto relative z-10">
       <span class="badge-gold font-montserrat text-xs uppercase tracking-widest font-bold px-4 py-1.5 rounded-full inline-block mb-4">BECOME AN ARBORAN</span>

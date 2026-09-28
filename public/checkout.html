@@ -90,10 +90,10 @@
     </div>
   </header>
 
-  <!-- MAIN CHECKOUT SECTION -->
+  <! - MAIN CHECKOUT SECTION - >
   <main class="flex-1 py-12 px-4 md:px-8 max-w-7xl mx-auto w-full">
     
-    <!-- HEADER TITLE -->
+    <! - HEADER TITLE - >
     <div class="text-center max-w-3xl mx-auto mb-10">
       <span class="inline-block bg-[#1A3327] border border-[#C5A880]/40 text-[#C5A880] font-montserrat text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3">
         OFFICIAL ARBORA EXPERIENCE PACKAGES
@@ -106,13 +106,13 @@
       </p>
     </div>
 
-    <!-- MAIN GRID: LEFT (PACKAGE SELECTION & INCLUSIONS), RIGHT (SUMMARY & FORM) -->
+    <! - MAIN GRID: LEFT (PACKAGE SELECTION & INCLUSIONS), RIGHT (SUMMARY & FORM) - >
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
       
-      <!-- LEFT COLUMN: PACKAGES & INCLUSIONS (7 COLS) -->
+      <! - LEFT COLUMN: PACKAGES & INCLUSIONS (7 COLS) - >
       <div class="lg:col-span-7 space-y-8">
         
-        <!-- STEP 1: SELECT PACKAGE -->
+        <! - STEP 1: SELECT PACKAGE - >
         <div class="bg-[#12241C] border border-white/10 rounded-3xl p-6 md:p-8">
           <div class="flex items-center gap-3 mb-6">
             <span class="w-7 h-7 rounded-full bg-sandstoneGold text-deepCanopy font-montserrat text-xs font-bold flex items-center justify-center">1</span>
@@ -121,7 +121,7 @@
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             
-            <!-- PREMIUM PRIVATE ROOM -->
+            <! - PREMIUM PRIVATE ROOM - >
             <div id="cardMaroon" onclick="selectPackage('private')" class="pkg-card selected-private p-6 rounded-2xl border-2 border-[#C5A880] bg-[#12241C] flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-3">
@@ -147,7 +147,7 @@
               </div>
             </div>
 
-            <!-- COMMUNITY DORMITORY BED -->
+            <! - COMMUNITY DORMITORY BED - >
             <div id="cardBlue" onclick="selectPackage('dorm')" class="pkg-card p-6 rounded-2xl border border-white/15 bg-midPine flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-3">
@@ -176,7 +176,7 @@
           </div>
         </div>
 
-        <!-- STEP 2: ALL 11 INCLUSIONS BREAKDOWN -->
+        <! - STEP 2: ALL 11 INCLUSIONS BREAKDOWN - >
         <div class="bg-[#12241C] border border-white/10 rounded-3xl p-6 md:p-8">
           <div class="flex items-center justify-between mb-6">
             <div class="flex items-center gap-3">
@@ -236,7 +236,7 @@
 
       </div>
 
-      <!-- RIGHT COLUMN: CALCULATOR & BOOKING FORM (5 COLS) -->
+      <! - RIGHT COLUMN: CALCULATOR & BOOKING FORM (5 COLS) - >
       <div class="lg:col-span-5 bg-[#12241C] border-2 border-sandstoneGold/40 rounded-3xl p-6 md:p-8 shadow-2xl sticky top-24">
         
         <div class="flex items-center gap-3 mb-6">
@@ -244,7 +244,7 @@
           <h2 class="font-montserrat text-lg font-bold text-crispLinen uppercase tracking-wider">Booking Details & Total</h2>
         </div>
 
-        <!-- FORM -->
+        <! - FORM - >
         <form id="checkoutForm" onsubmit="handleCheckout(event)" class="space-y-4">
           
           <div>
@@ -283,7 +283,7 @@
             <textarea id="custNotes" rows="2" placeholder="e.g. Vegetarian food, solo traveler joining..." class="w-full bg-deepCanopy border border-white/15 rounded-xl px-4 py-2 font-sans text-xs text-crispLinen focus:outline-none focus:border-warmCream"></textarea>
           </div>
 
-          <!-- PRICE SUMMARY BOX -->
+          <! - PRICE SUMMARY BOX - >
           <div class="p-5 rounded-2xl bg-deepCanopy border border-white/15 space-y-2 mt-6">
             <div class="flex justify-between font-sans text-xs text-mutedSage">
               <span>Selected Package:</span>
@@ -303,7 +303,7 @@
             </div>
           </div>
 
-          <!-- TERMS & CONDITIONS AGREEMENT CHECKBOX -->
+          <! - TERMS & CONDITIONS AGREEMENT CHECKBOX - >
           <div class="p-4 rounded-xl bg-deepCanopy border border-white/15 space-y-2 mt-4">
             <label class="flex items-start gap-3 cursor-pointer select-none">
               <input type="checkbox" id="termsCheck" required class="mt-1 w-4 h-4 accent-sandstoneGold rounded shrink-0" />
@@ -313,7 +313,7 @@
             </label>
           </div>
 
-          <!-- ACTION BUTTONS -->
+          <! - ACTION BUTTONS - >
           <div class="space-y-3 pt-3">
             <button type="submit" class="w-full btn-shine-clean font-montserrat py-3.5 rounded-xl text-xs uppercase font-bold tracking-widest flex items-center justify-center gap-2">
               <span>Confirm Booking on WhatsApp &rarr;</span>
@@ -356,7 +356,7 @@
 
   </main>
 
-  <!-- FOOTER -->
+  <! - FOOTER - >
   <footer class="py-8 bg-deepCanopy border-t border-white/10 text-center font-sans text-xs text-mutedSage">
     <p>&copy; 2026 Arbora Experience Brand. All rights reserved. &bull; Mudigere, Karnataka &bull; <a href="terms" class="underline text-sandstoneGold">Terms &amp; Policies</a></p>
   </footer>
