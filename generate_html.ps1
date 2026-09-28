@@ -195,14 +195,14 @@ $mainHtmlContent = @"
 </head>
 <body class="selection:bg-warmCream selection:text-deepCanopy">
 
-  <!-- TOP SCROLL PROGRESS BAR -->
+  <!-- - TOP SCROLL PROGRESS BAR - -->
   <div id="scrollProgressBar" class="fixed top-0 left-0 h-[2.5px] bg-sandstoneGold z-[60] transition-all duration-150 ease-out" style="width: 0%;"></div>
 
-  <!-- NAVIGATION HEADER -->
+  <!-- - NAVIGATION HEADER - -->
   <header id="mainHeader" class="fixed top-0 left-0 w-full z-50 glass-nav py-2.5 transition-all duration-500 hero-fade-init">
     <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-14 lg:h-16">
       
-      <!-- LOGO BRAND (COMPACT & REFINED) -->
+      <!-- - LOGO BRAND (COMPACT & REFINED) - -->
       <a href="#" class="flex items-center gap-2.5 shrink-0 group my-auto mr-4 lg:mr-8 xl:mr-12">
         <img id="headerLogo" src="$logoMarkUrl" alt="Arbora Icon Mark" class="h-8 sm:h-9 lg:h-[38px] w-auto object-contain transition-all duration-300 group-hover:scale-105 my-auto self-center shrink-0" />
         
@@ -214,7 +214,7 @@ $mainHtmlContent = @"
         </div>
       </a>
 
-      <!-- DESKTOP NAV LINKS (CLEAN, MINIMAL & REFINED TYPOGRAPHY) -->
+      <!-- - DESKTOP NAV LINKS (CLEAN, MINIMAL & REFINED TYPOGRAPHY) - -->
       <nav class="hidden lg:flex items-center gap-4 lg:gap-5 xl:gap-7 2xl:gap-8 font-montserrat text-[10.5px] lg:text-[11px] xl:text-[11.5px] tracking-[0.12em] uppercase font-medium my-auto whitespace-nowrap text-[#F1F5F2]/85">
         <a href="#philosophy" class="hover:text-white transition-colors py-1">Philosophy</a>
         <a href="#offers" class="text-sandstoneGold font-semibold hover:text-white transition-colors py-1">What We Offer</a>
@@ -227,7 +227,7 @@ $mainHtmlContent = @"
         </a>
       </nav>
 
-      <!-- CTA BUTTON GROUP -->
+      <!-- - CTA BUTTON GROUP - -->
       <div class="flex items-center gap-3 my-auto shrink-0 ml-auto lg:ml-6 xl:ml-8">
         <button onclick="openModal()" class="hidden sm:inline-flex btn-shine-clean font-montserrat text-[10.5px] xl:text-[11px] tracking-[0.12em] uppercase font-bold px-4.5 xl:px-5 py-2 xl:py-2.5 rounded-full shrink-0 whitespace-nowrap shadow-md">
           JOIN THE COMMUNITY &rarr;
@@ -258,7 +258,7 @@ $mainHtmlContent = @"
     </div>
   </header>
 
-  <!-- 01  -  HERO (STREAMED VIDEO FILES - ZERO BUNDLE OVERHEAD) -->
+  <!-- - 01  -  HERO (STREAMED VIDEO FILES - ZERO BUNDLE OVERHEAD) - -->
   <section id="heroSection" class="relative min-h-[88vh] flex items-center justify-center pt-32 pb-24 px-6 overflow-hidden bg-deepCanopy">
     <div class="absolute inset-0 z-0 w-full h-full overflow-hidden">
       <video id="heroVideoDesktop" autoplay muted loop playsinline class="hidden md:block w-full h-full object-cover scale-105">
@@ -292,7 +292,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 02  -  PHILOSOPHY -->
+  <!-- - 02  -  PHILOSOPHY - -->
   <section id="philosophy" class="relative py-24 px-6 bg-gradient-to-b from-[#0B1712] via-deepCanopy to-[#12241C]">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-12 reveal-on-scroll">
@@ -303,7 +303,7 @@ $mainHtmlContent = @"
         </p>
       </div>
 
-      <!-- COMMUNITY MATCHER -->
+      <!-- - COMMUNITY MATCHER - -->
       <div class="my-12 p-8 md:p-10 rounded-3xl bg-[#12241C] border-2 border-warmCream/40 flex flex-col md:flex-row items-center justify-between gap-6 reveal-on-scroll">
         <div>
           <span class="badge-gold font-montserrat text-xs uppercase font-bold px-3.5 py-1 rounded-full inline-block mb-2">&star; Community Matcher</span>
@@ -322,7 +322,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 03  -  COMMUNITY -->
+  <!-- - 03  -  COMMUNITY - -->
   <section id="community" class="py-24 px-6 bg-[#0B1712] text-crispLinen border-t border-white/10">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
@@ -331,7 +331,7 @@ $mainHtmlContent = @"
         <p class="font-sans text-mutedSage text-base">Who belongs to Arbora? Real people - creators, dreamers, music lovers, solo travelers, and friend circles who come for the getaway and stay for the community.</p>
       </div>
 
-      <!-- Community Grid -->
+      <!-- - Community Grid - -->
       <div class="desktop-only-grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <div class="p-7 rounded-3xl bg-[#12241C] border border-white/15 flex flex-col justify-between hover:border-warmCream transition-all">
           <div>
@@ -358,7 +358,7 @@ $mainHtmlContent = @"
         </div>
       </div>
 
-      <!-- Mobile Touch Carousel -->
+      <!-- - Mobile Touch Carousel - -->
       <div class="mobile-only-carousel flex-col">
         <div class="flex overflow-x-auto snap-x snap-mandatory gap-5 pb-6 -mx-6 px-6 no-scrollbar" onscroll="updateSectionDots(this, 'arbDots', 3)">
           <div class="snap-center shrink-0 w-[82vw] max-w-[300px] p-6 rounded-3xl bg-[#12241C] border border-white/15">
@@ -389,7 +389,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 04  -  THE ARBORA WAY -->
+  <!-- - 04  -  THE ARBORA WAY - -->
   <section id="pillars" class="py-24 px-6 bg-[#0B1712] text-[#F1F5F2]">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
@@ -398,7 +398,7 @@ $mainHtmlContent = @"
         <p class="font-sans text-mutedSage text-base">These aren't package features or logistics line items. They are the 7 core beliefs that define every Arbora experience.</p>
       </div>
 
-      <!-- Desktop Grid -->
+      <!-- - Desktop Grid - -->
       <div class="desktop-only-grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <div class="p-7 rounded-3xl bg-[#12241C] border border-white/10 hover:border-warmCream transition-all">
           <span class="font-heading text-xs uppercase tracking-widest text-sandstoneGold block mb-1">BELIEF 01 &bull; NATURE</span>
@@ -437,7 +437,7 @@ $mainHtmlContent = @"
         </div>
       </div>
 
-      <!-- Mobile Touch Scroll Carousel -->
+      <!-- - Mobile Touch Scroll Carousel - -->
       <div class="mobile-only-carousel flex-col">
         <div class="flex overflow-x-auto snap-x snap-mandatory gap-5 pb-6 -mx-6 px-6 no-scrollbar" onscroll="updateSectionDots(this, 'pillarsDots', 7)">
           <div class="snap-center shrink-0 w-[82vw] max-w-[300px] p-6 rounded-3xl bg-[#12241C] border border-white/15">
@@ -492,7 +492,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 05  -  THE NEXT ARBORA & THIS TIME WE GATHER AT -->
+  <!-- - 05  -  THE NEXT ARBORA & THIS TIME WE GATHER AT - -->
   <section id="next-experience" class="py-24 px-6 bg-[#E8EFEA] text-[#0A1F14]">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
@@ -508,7 +508,7 @@ $mainHtmlContent = @"
         </div>
       </div>
 
-      <!-- Desktop Grid -->
+      <!-- - Desktop Grid - -->
       <div class="desktop-only-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
         <div class="rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden hover:border-sandstoneGold transition-all flex flex-col justify-between group">
           <div class="relative h-60 w-full bg-[#D8E3DB] overflow-hidden">
@@ -583,7 +583,7 @@ $mainHtmlContent = @"
         </div>
       </div>
 
-      <!-- Mobile Touch Carousel -->
+      <!-- - Mobile Touch Carousel - -->
       <div class="mobile-only-carousel flex-col">
         <div class="flex overflow-x-auto snap-x snap-mandatory gap-5 pb-6 -mx-6 px-6 no-scrollbar" onscroll="updateSectionDots(this, 'destDots', 6)">
           <div class="snap-center shrink-0 w-[85vw] max-w-[320px] rounded-3xl bg-white border border-[#D1DDD5] overflow-hidden flex flex-col">
@@ -667,121 +667,63 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- WHAT WE OFFER & PACKAGE RATES -->
+  <!-- - WHAT WE OFFER & ALL-INCLUSIVE EXPERIENCE - -->
   <section id="offers" class="py-24 px-6 bg-[#0B1712] text-crispLinen border-t border-white/10 scroll-mt-16">
     <div class="max-w-7xl mx-auto">
       
       <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
         <span class="badge-gold font-montserrat text-xs uppercase tracking-widest font-bold px-4 py-1.5 rounded-full inline-block mb-3">
-          PACKAGES &amp; PRICING
+          CURATED ITINERARY &amp; INCLUSIONS
         </span>
         <h2 class="font-heading text-4xl md:text-6xl uppercase tracking-wider text-crispLinen mb-4">
           WHAT WE OFFER
         </h2>
         <p class="font-sans text-mutedSage text-sm md:text-base leading-relaxed">
-          Choose your accommodation experience at Sura Stays Mudigere. Both packages include our complete 11-item all-inclusive itinerary, transport, meals, campfire, and activities.
+          Every Arbora Retreat is an all-inclusive 48-hour gathering at Sura Stays Mudigere - featuring 30 curated experiences, roundtrip transport, authentic regional dining, guided treks, and acoustic campfires.
         </p>
       </div>
 
-      <!-- CARDS GRID -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-        
-        <!-- PRIVATE ROOM PACKAGE -->
-        <div class="rounded-3xl bg-[#12241C] border-2 border-[#C5A880]/60 p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-[#C5A880] transition-all">
-          <div class="absolute top-0 right-0 bg-[#C5A880] text-[#0B1712] font-montserrat text-[10px] font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-bl-2xl">
-            PRIVATE ROOMS &bull; 6 AVAILABLE
-          </div>
-
-          <div>
-            <span class="font-montserrat text-xs text-[#C5A880] font-bold uppercase tracking-widest block mb-2">PREMIUM PRIVATE STAY</span>
-            <h3 class="font-heading text-3xl md:text-4xl uppercase tracking-wider text-warmCream mb-3">PREMIUM PRIVATE ROOM</h3>
-            <p class="font-sans text-xs md:text-sm text-mutedSage leading-relaxed mb-6">
-              Exclusive private rooms with ensuite bathroom for couples or individuals who value personal space alongside community events.
-            </p>
-
-            <div class="flex items-baseline gap-2 mb-6">
-              <span class="font-heading text-4xl text-warmCream">&#8377;7,499</span>
-              <span class="font-sans text-xs text-mutedSage">INR / head</span>
-            </div>
-
-            <!-- KEY FEATURES -->
-            <ul class="space-y-2.5 font-sans text-xs text-crispLinen mb-8 border-t border-white/10 pt-6">
-              <li class="flex items-center gap-2.5"><span class="text-[#C5A880] font-bold">&#10004;</span> <span>Private Room with Ensuite Bathroom (6 Rooms Available)</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#C5A880] font-bold">&#10004;</span> <span>All 11 Inclusions Covered (Meals, Transport, Trek, Campfire)</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#C5A880] font-bold">&#10004;</span> <span>Roundtrip Travel from Bengaluru &amp; Tollgate Taxes Included</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#C5A880] font-bold">&#10004;</span> <span>Welcome Artisanal Chocolates &amp; Takeaway Gift</span></li>
-            </ul>
-          </div>
-
-          <a href="checkout?package=private" class="w-full btn-shine-clean font-montserrat py-4 rounded-2xl font-bold text-xs uppercase tracking-widest text-center shadow-lg">
-            BOOK PRIVATE ROOM &rarr;
-          </a>
-        </div>
-
-        <!-- COMMUNITY DORMITORY PACKAGE -->
-        <div class="rounded-3xl bg-[#12241C] border-2 border-[#D8C4B6]/50 p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-[#D8C4B6] transition-all">
-          <div class="absolute top-0 right-0 bg-[#D8C4B6] text-[#0B1712] font-montserrat text-[10px] font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-bl-2xl">
-            COMMUNITY DORM &bull; 9 BEDS AVAILABLE
-          </div>
-
-          <div>
-            <span class="font-montserrat text-xs text-[#D8C4B6] font-bold uppercase tracking-widest block mb-2">COMMUNITY DORM STAY</span>
-            <h3 class="font-heading text-3xl md:text-4xl uppercase tracking-wider text-warmCream mb-3">COMMUNITY DORMITORY BED</h3>
-            <p class="font-sans text-xs md:text-sm text-mutedSage leading-relaxed mb-6">
-              Spacious estate dormitory bed designed for friends and solo travelers wanting to stay at the heart of the community vibe.
-            </p>
-
-            <div class="flex items-baseline gap-2 mb-6">
-              <span class="font-heading text-4xl text-warmCream">&#8377;6,999</span>
-              <span class="font-sans text-xs text-mutedSage">INR / head</span>
-            </div>
-
-            <!-- KEY FEATURES -->
-            <ul class="space-y-2.5 font-sans text-xs text-crispLinen mb-8 border-t border-white/10 pt-6">
-              <li class="flex items-center gap-2.5"><span class="text-[#D8C4B6] font-bold">&#10004;</span> <span>Single Dormitory Bed Access (9 Beds Available)</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#D8C4B6] font-bold">&#10004;</span> <span>All 11 Inclusions Covered (Meals, Transport, Trek, Campfire)</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#D8C4B6] font-bold">&#10004;</span> <span>Roundtrip Travel from Bengaluru &amp; Tollgate Taxes Included</span></li>
-              <li class="flex items-center gap-2.5"><span class="text-[#D8C4B6] font-bold">&#10004;</span> <span>Welcome Artisanal Chocolates &amp; Takeaway Gift</span></li>
-            </ul>
-          </div>
-
-          <a href="checkout?package=dorm" class="w-full btn-shine-clean font-montserrat py-4 rounded-2xl font-bold text-xs uppercase tracking-widest text-center shadow-lg">
-            BOOK DORM BED &rarr;
-          </a>
-        </div>
-
-      </div>
-
-      <!-- INCLUSIONS SUMMARY BANNER -->
-      <div class="p-8 rounded-3xl bg-[#12241C] border border-white/15 max-w-5xl mx-auto">
-        <h4 class="font-montserrat text-base font-bold text-warmCream text-center mb-6 uppercase tracking-wider">
-          All-Inclusive Experience &bull; Every Package Includes:
+      <!-- - INCLUSIONS GRID BANNER - -->
+      <div class="p-8 md:p-10 rounded-3xl bg-[#12241C] border border-white/15 max-w-5xl mx-auto shadow-2xl">
+        <h4 class="font-montserrat text-base md:text-lg font-bold text-warmCream text-center mb-6 uppercase tracking-wider">
+          ALL-INCLUSIVE EXPERIENCE &bull; EVERY PACKAGE INCLUDES:
         </h4>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center font-sans text-xs text-mutedSage">
-          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">1. Stay</span><span>Sura Stays Estate</span></div>
-          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">2. Transport</span><span>Roundtrip Travel</span></div>
-          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">3. Breakfast</span><span>Estate Breakfast</span></div>
-          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">4. Lunch</span><span>South Canara Feast</span></div>
-          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">5. Tea &amp; Snacks</span><span>Evening Coffee &amp; Snacks</span></div>
-          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">6. Dinner</span><span>Long-Table Dinner</span></div>
-          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">7. Water</span><span>Purified Water</span></div>
-          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">8. Campfire</span><span>Acoustic Session</span></div>
-          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">9. Activities</span><span>Peak Trek &amp; Streams</span></div>
-          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5"><span class="text-sandstoneGold font-bold block mb-1">10. Chocolates</span><span>Welcome Treats</span></div>
-          <div class="p-3 bg-deepCanopy rounded-xl border border-white/5 col-span-2 sm:col-span-2"><span class="text-sandstoneGold font-bold block mb-1">11. Staff &amp; Taxes</span><span>Hosts, Media &amp; Tolls</span></div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center font-sans text-xs text-mutedSage mb-8">
+          <div class="p-3.5 bg-deepCanopy rounded-2xl border border-white/10 flex flex-col justify-center"><span class="text-sandstoneGold font-bold block mb-1">1. Stay</span><span>Sura Stays Estate</span></div>
+          <div class="p-3.5 bg-deepCanopy rounded-2xl border border-white/10 flex flex-col justify-center"><span class="text-sandstoneGold font-bold block mb-1">2. Transport</span><span>Roundtrip Travel</span></div>
+          <div class="p-3.5 bg-deepCanopy rounded-2xl border border-white/10 flex flex-col justify-center"><span class="text-sandstoneGold font-bold block mb-1">3. Breakfast</span><span>Estate Breakfast</span></div>
+          <div class="p-3.5 bg-deepCanopy rounded-2xl border border-white/10 flex flex-col justify-center"><span class="text-sandstoneGold font-bold block mb-1">4. Lunch</span><span>South Canara Feast</span></div>
+          <div class="p-3.5 bg-deepCanopy rounded-2xl border border-white/10 flex flex-col justify-center"><span class="text-sandstoneGold font-bold block mb-1">5. Tea &amp; Snacks</span><span>Evening Coffee &amp; Snacks</span></div>
+          <div class="p-3.5 bg-deepCanopy rounded-2xl border border-white/10 flex flex-col justify-center"><span class="text-sandstoneGold font-bold block mb-1">6. Dinner</span><span>Long-Table Dinner</span></div>
+          <div class="p-3.5 bg-deepCanopy rounded-2xl border border-white/10 flex flex-col justify-center"><span class="text-sandstoneGold font-bold block mb-1">7. Water</span><span>Purified Water</span></div>
+          <div class="p-3.5 bg-deepCanopy rounded-2xl border border-white/10 flex flex-col justify-center"><span class="text-sandstoneGold font-bold block mb-1">8. Campfire</span><span>Acoustic Session</span></div>
+          <div class="p-3.5 bg-deepCanopy rounded-2xl border border-white/10 flex flex-col justify-center"><span class="text-sandstoneGold font-bold block mb-1">9. Activities</span><span>Peak Trek &amp; Streams</span></div>
+          <div class="p-3.5 bg-deepCanopy rounded-2xl border border-white/10 flex flex-col justify-center"><span class="text-sandstoneGold font-bold block mb-1">10. Chocolates</span><span>Welcome Treats</span></div>
+          <div class="p-3.5 bg-deepCanopy rounded-2xl border border-white/10 col-span-2 sm:col-span-2 flex flex-col justify-center"><span class="text-sandstoneGold font-bold block mb-1">11. Staff &amp; Taxes</span><span>Hosts, Media &amp; Tolls Covered</span></div>
+        </div>
+
+        <!-- - BOOK RETREAT CTA BUTTON - -->
+        <div class="text-center pt-4 border-t border-white/10">
+          <a href="checkout" class="btn-shine-clean font-montserrat text-xs md:text-sm font-bold uppercase tracking-widest px-9 py-4 rounded-full inline-flex items-center gap-2.5 shadow-2xl hover:scale-105 transition-transform">
+            <span>BOOK RETREAT / VIEW PACKAGES &rarr;</span>
+          </a>
+          <p class="font-sans text-[11px] text-mutedSage mt-3">Choose Premium Private Room (6 Available) or Community Dorm Bed (9 Available) on Checkout</p>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- 06  -  EVERY ARBORA EXPERIENCE HAS -->
+    </div>
+  </section>
+
+  <!-- - 06  -  EVERY ARBORA EXPERIENCE HAS - -->
   <section id="inclusions" class="py-24 px-6 bg-[#D8E3DB] text-[#0A2116]">
     <div class="max-w-7xl mx-auto text-center">
       <span class="badge-oat font-montserrat text-xs uppercase tracking-widest font-semibold px-4 py-1.5 rounded-full inline-block mb-3 bg-white/60">Logistics Follow Culture</span>
       <h2 class="font-heading text-4xl md:text-5xl uppercase tracking-wider mb-12 text-[#0A2116]">EVERY ARBORA EXPERIENCE HAS</h2>
 
-      <!-- Desktop Grid -->
+      <!-- - Desktop Grid - -->
       <div class="desktop-only-grid grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="p-6 rounded-3xl bg-white border border-[#C4D3C8] flex flex-col justify-between text-left">
           <h3 class="font-montserrat text-xl font-bold mb-2 text-[#0A2116]">People &amp; Community</h3>
@@ -801,7 +743,7 @@ $mainHtmlContent = @"
         </div>
       </div>
 
-      <!-- Mobile Touch Carousel -->
+      <!-- - Mobile Touch Carousel - -->
       <div class="mobile-only-carousel flex-col text-left">
         <div class="flex overflow-x-auto snap-x snap-mandatory gap-5 pb-6 -mx-6 px-6 no-scrollbar" onscroll="updateSectionDots(this, 'incDots', 4)">
           <div class="snap-center shrink-0 w-[82vw] max-w-[300px] p-6 rounded-3xl bg-white border border-[#C4D3C8]">
@@ -834,7 +776,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 07  -  FIND YOUR WAY INTO ARBORA -->
+  <!-- - 07  -  FIND YOUR WAY INTO ARBORA - -->
   <section id="experiences" class="py-20 px-6 bg-[#0B1712] text-crispLinen border-t border-b border-white/10">
     <div class="max-w-6xl mx-auto text-center">
       <span class="badge-oat font-montserrat text-xs uppercase tracking-widest font-semibold px-4 py-1.5 rounded-full inline-block mb-4">Community Formats</span>
@@ -877,7 +819,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 08  -  WHAT HAPPENS AFTER YOUR FIRST ARBORA? -->
+  <!-- - 08  -  WHAT HAPPENS AFTER YOUR FIRST ARBORA? - -->
   <section id="after-arbora" class="py-24 px-6 bg-[#0D1C13] text-crispLinen border-b border-white/10">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -912,7 +854,7 @@ $mainHtmlContent = @"
         </div>
       </div>
 
-      <!-- FROM ARBORA -->
+      <!-- - FROM ARBORA - -->
       <div class="border-t border-white/10 pt-16">
         <div class="text-center max-w-3xl mx-auto mb-12">
           <span class="badge-oat font-montserrat text-xs uppercase tracking-widest font-semibold px-4 py-1.5 rounded-full">Living Brand Content</span>
@@ -941,11 +883,11 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-    <!-- 09  -  WHY ARBORA EXISTS & OUR COMMUNITY STORY -->
+    <!-- - 09  -  WHY ARBORA EXISTS & OUR COMMUNITY STORY - -->
   <section id="why-we-exist" class="py-24 px-6 bg-warmSage text-charcoalGreen scroll-mt-16">
     <div class="max-w-7xl mx-auto">
       
-      <!-- HERO BANNER -->
+      <!-- - HERO BANNER - -->
       <div class="text-center max-w-4xl mx-auto mb-16 reveal-on-scroll">
         <div class="inline-flex items-center gap-2 mb-4 px-4 py-1 rounded-full bg-[#1A3327] border border-[#C5A880]/40 font-montserrat text-xs text-[#C5A880] font-bold uppercase tracking-widest">
           <span>&#9733; The Belief Behind Arbora</span>
@@ -959,7 +901,7 @@ $mainHtmlContent = @"
         </p>
       </div>
 
-      <!-- THE ARBORA STORY & MEET THE TEAM CTA -->
+      <!-- - THE ARBORA STORY & MEET THE TEAM CTA - -->
       <div class="investor-outer-card p-10 md:p-14 max-w-5xl mx-auto shadow-2xl">
         <span class="font-montserrat text-xs font-bold text-[#C5A880] uppercase tracking-widest block mb-2">ORIGIN &amp; VISION</span>
         <h3 class="font-heading text-3xl md:text-5xl uppercase tracking-wider text-[#EADBC8] mb-6">THE ARBORA STORY</h3>
@@ -976,7 +918,7 @@ $mainHtmlContent = @"
           </p>
         </div>
 
-        <!-- CTA TO TEAM PAGE -->
+        <!-- - CTA TO TEAM PAGE - -->
         <div class="pt-6 border-t border-white/10 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
           <div class="text-left">
             <h4 class="font-montserrat text-base font-bold text-crispLinen">Meet The Builders Of Arbora</h4>
@@ -991,7 +933,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- 10  -  COMMUNITY MEMBERSHIP CTA -->
+  <!-- - 10  -  COMMUNITY MEMBERSHIP CTA - -->
   <section class="py-24 px-6 bg-[#0B1712] text-crispLinen text-center border-t border-white/10 relative overflow-hidden">
     <div class="max-w-6xl mx-auto relative z-10">
       <span class="badge-gold font-montserrat text-xs uppercase tracking-widest font-bold px-4 py-1.5 rounded-full inline-block mb-4">BECOME AN ARBORAN</span>
@@ -1010,7 +952,7 @@ $mainHtmlContent = @"
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- - FOOTER - -->
   <footer class="py-14 px-6 bg-deepCanopy border-t border-white/10 text-center">
     <div class="max-w-4xl mx-auto flex flex-col items-center justify-center">
       <img src="$logoMarkUrl" alt="Arbora Icon Mark" class="h-14 md:h-16 w-auto mb-4 object-contain self-center mx-auto" />
@@ -1021,7 +963,7 @@ $mainHtmlContent = @"
         </span>
       </div>
 
-      <!-- CONTACT & SOCIAL LINKS BLOCK -->
+      <!-- - CONTACT & SOCIAL LINKS BLOCK - -->
       <div class="my-5 p-6 rounded-2xl bg-[#12241C] border border-white/15 max-w-xl w-full text-center">
         <p class="font-montserrat text-xs uppercase tracking-widest text-[#EADBC8] font-bold mb-2">Support &amp; Inquiries</p>
         <p class="font-sans text-xs text-[#A3B8AD] mb-1">
@@ -1059,7 +1001,7 @@ $mainHtmlContent = @"
     </div>
   </footer>
 
-  <!-- MODALS -->
+  <!-- - MODALS - -->
   <div id="bookingModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
     <div class="bg-deepCanopy border-2 border-warmCream rounded-3xl p-8 max-w-lg w-full relative">
       <button onclick="closeModal()" class="absolute top-4 right-4 text-white/60 hover:text-white text-xl font-bold">&times;</button>
@@ -1080,7 +1022,7 @@ $mainHtmlContent = @"
     </div>
   </div>
 
-  <!-- COMMUNITY MATCHER QUIZ MODAL -->
+  <!-- - COMMUNITY MATCHER QUIZ MODAL - -->
   <div id="quizModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
     <div class="bg-deepCanopy border-2 border-warmCream rounded-3xl p-8 max-w-lg w-full relative">
       <button onclick="closeQuizModal()" class="absolute top-4 right-4 text-white/60 hover:text-white text-xl font-bold">&times;</button>
