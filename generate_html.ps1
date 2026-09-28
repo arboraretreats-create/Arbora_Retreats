@@ -707,7 +707,6 @@ $mainHtmlContent = @"
           <a href="checkout" class="btn-shine-clean font-montserrat text-xs md:text-sm font-bold uppercase tracking-widest px-9 py-4 rounded-full inline-flex items-center gap-2.5 shadow-2xl hover:scale-105 transition-transform">
             <span>BOOK RETREAT / VIEW PACKAGES &rarr;</span>
           </a>
-          <p class="font-sans text-[11px] text-mutedSage mt-3">Choose Premium Private Room (6 Available) or Community Dorm Bed (9 Available) on Checkout</p>
         </div>
       </div>
 
