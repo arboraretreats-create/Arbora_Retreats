@@ -39,6 +39,7 @@ $mainHtmlContent = @"
   <meta name="description" content="Official website of Arbora Retreats. Discover curated nature retreats in Karnataka with weekend escapes, acoustic music, guided treks, community gatherings and Malnad dining." />
   <meta name="keywords" content="Arbora, Arbora Retreats, Arbora Retreats Karnataka, nature retreats in Karnataka, weekend retreats Karnataka, nature getaway Karnataka, community retreats Karnataka, Western Ghats retreats, weekend getaway from Bangalore, Mudigere retreat" />
   <link rel="canonical" href="https://arboraretreats.in/" />
+  <meta name="google-site-verification" content="2Lj02lPzPTUtCEshjul42C1bbD9wRChjawTREnbt_wk" />
   
   <!-- Open Graph / Social SEO -->
   <meta property="og:type" content="website" />
